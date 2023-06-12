@@ -42,7 +42,6 @@
 
 #restart-button{
     position:absolute;
-    display:inline-block;
     width:12vw;
     height:200px;
     margin-left:20%;
@@ -60,6 +59,10 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.card-value{
+    width:100%;
 }
     </style>
 </head>
@@ -117,6 +120,7 @@
 
         <section id="main">
             <video id="video" src="image/mate-video.mp4" muted autoplay loop></video>
+            <div class="button-area">
             <div class="btn-area">
                 <button type="button" class="btn-sound" onclick="toggleSound()">
                     <div class="image-toggle on-img"></div>
@@ -128,6 +132,7 @@
                     <div class="restart-button"></div>
                 </button>
             </div>
+        </div>
         </section>
 
 

@@ -1,7 +1,7 @@
 @media all and (min-width:1440px){
-    #restart-button{
-        margin-top:48.7%;
-    }
+    /* #restart-button{
+        margin-top:48.2%;
+    } */
 
 #scrollgame{
     bottom:100px;
@@ -527,10 +527,10 @@ header h1 img{
 }
 
 @media all and (min-width:1728px){
-
+/* 
     #restart-button{
-        margin-top:50.4%;
-    }
+        margin-top:50%;
+    } */
 
     #scrollgame {
         bottom: 110px;
@@ -644,9 +644,9 @@ header h1 img{
 
 
 @media all and (min-width:1920px){
-    #restart-button{
-        margin-top:49.5%;
-    }
+    /* #restart-button{
+        margin-top:49.2%;
+    } */
 
     #scrollgame {
         bottom: 130px;

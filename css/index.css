@@ -193,10 +193,13 @@ video {
 
 .image-toggle{
     position:absolute;
-    display:inline-block;
     width:12vw;
     height:200px;
     margin-left:5%;
+}
+
+.button-area{
+    display:flex;
 }
 
 
