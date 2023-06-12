@@ -73,49 +73,74 @@ function scrollToTop() {
 
 
 
+// $(document).ready(function() {
+//     var video = $("#video");
+//     var soundButton = $('.btn-sound');
+//     var pauseButton = $('.btn-pause');
+//     var playPauseButton = $('.play-pause-button');
+  
+//     soundButton.on('click', function() {
+//       if (soundButton.hasClass('on')) {
+//         soundButton.removeClass('on');
+//         soundButton.text('Sound OFF');
+//         video.prop('muted', false);
+//       } else {
+//         soundButton.addClass('on');
+//         soundButton.text('Sound ON');
+//         video.prop('muted', true);
+//       }
+//     });
+  
+//     pauseButton.on('click', function() {
+//       if (pauseButton.hasClass('on')) {
+//         pauseButton.removeClass('on');
+//         video.trigger('play');
+//       } else {
+//         pauseButton.addClass('on');
+//         video.trigger('pause');
+//       }
+//     });
+  
+//     playPauseButton.on('click', function() {
+//       if (playPauseButton.hasClass('playing')) {
+//         playPauseButton.removeClass('paused playing');
+//         playPauseButton.addClass('paused');
+//       } else {
+//         if (playPauseButton.hasClass('paused')) {
+//           playPauseButton.addClass('playing');
+//         }
+//       }
+//       if (!playPauseButton.hasClass('paused')) {
+//         playPauseButton.addClass('paused');
+//       }
+//     });
+//   });
+
+
 $(document).ready(function() {
-    var video = $("#video");
-    var soundButton = $('.btn-sound');
-    var pauseButton = $('.btn-pause');
-    var playPauseButton = $('.play-pause-button');
-  
-    soundButton.on('click', function() {
-      if (soundButton.hasClass('on')) {
-        soundButton.removeClass('on');
-        soundButton.text('Sound OFF');
-        video.prop('muted', false);
-      } else {
-        soundButton.addClass('on');
-        soundButton.text('Sound ON');
-        video.prop('muted', true);
-      }
-    });
-  
-    pauseButton.on('click', function() {
-      if (pauseButton.hasClass('on')) {
-        pauseButton.removeClass('on');
-        video.trigger('play');
-      } else {
-        pauseButton.addClass('on');
-        video.trigger('pause');
-      }
-    });
-  
-    playPauseButton.on('click', function() {
-      if (playPauseButton.hasClass('playing')) {
-        playPauseButton.removeClass('paused playing');
-        playPauseButton.addClass('paused');
-      } else {
-        if (playPauseButton.hasClass('paused')) {
-          playPauseButton.addClass('playing');
-        }
-      }
-      if (!playPauseButton.hasClass('paused')) {
-        playPauseButton.addClass('paused');
-      }
-    });
+  var video = $("#video");
+  var imageToggle = $('.image-toggle');
+  var soundButton = $('.btn-sound');
+
+  soundButton.on('click', function() {
+    soundButton.toggleClass('on');
+    video.prop('muted', !soundButton.hasClass('on'));
   });
+
+  imageToggle.on('click', function() {
+    imageToggle.toggleClass('on-img off-img');
+
+    if (soundButton.hasClass('on')) {
+      video.prop('muted', true);
+    } else {
+      video.prop('muted', false);
+    }
+  });
+});
+
    
+
+
   $(document).ready(function() {
     var video = $('#video'); 
 
@@ -126,7 +151,7 @@ $(document).ready(function() {
 });
 
 
-  
+
 
 
 

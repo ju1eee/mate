@@ -84,11 +84,24 @@
     }
 }
 
+
+
+    #news {
+        width: 100%;
+        height: 1080px;
+        background-image: url("/image/news1.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: #fff;
+        background-attachment: fixed;
+    }
+
 #wrapper {
     width: 100%;
     position: static;
     overflow: hidden;
 }
+
 
 /* header */
 header {
@@ -125,6 +138,7 @@ header h1 {
 header h1 img {
     width: 270px;
     height: 50px;
+    margin-top:2%;
 }
 
 #gnb {
@@ -186,49 +200,39 @@ video {
     object-fit: cover;
 }
 
-.btn-area button {
-    position: absolute;
-    border-radius: 27px;
-    padding: 0 60px;
-    color: #fff;
-    line-height: 50px;
-    border: 2px solid #ddd;
-    background: rgba(0, 0, 0, .3);
-    font-size: 0.8em;
-    cursor: pointer;
-    margin-top: 850px;
-    margin-left: 100px;
+
+.image-toggle{
+    position:absolute;
+    display:inline-block;
+    width:12vw;
+    height:200px;
+    margin-left:5%;
 }
 
-.btn-area .btn-pause {
-    display: none;
+.on-img{
+    background-image:url('/image/mate-on.png');
+    background-repeat:no-repeat;
+    background-size: contain;
 }
 
-.btn-area.active .btn-pause {
-    display: inline;
+.off-img{
+    background-image:url('/image/mate-off.png');
+    background-repeat:no-repeat;
+    background-size: contain;
 }
 
-.btn-area.active .btn-sound {
-    display: none;
+.restart-button{
+    position:absolute;
+    display:inline-block;
+    width:12vw;
+    height:200px;
+    margin-left:20%;
+    background-image:url('/image/Restart.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    top:0;
+    margin-top:5%;
 }
-
-
-.btn-area2 button {
-    position: absolute;
-    border-radius: 27px;
-    padding: 0 60px;
-    color: #fff;
-    line-height: 50px;
-    border: 2px solid #ddd;
-    background: rgba(0, 0, 0, .3);
-    font-size: 0.8em;
-    cursor: pointer;
-    margin-top: 850px;
-    margin-left: 320px;
-}
-
-
-
 
 
 
@@ -1707,16 +1711,16 @@ video {
 
 #character-1 {
     position: absolute;
-    width: 34.72%;
+    width: 30%;
     margin-top: 23.15%;
-    margin-left: 12%;
+    margin-left: 18%;
 }
 
 #character-2 {
     position: absolute;
-    width: 25.35%;
-    margin-top: 23%;
-    margin-left: 60%;
+    width: 21%;
+    margin-top: 23.5%;
+    margin-left: 58%;
 }
 
 #character #ch1-txt {
@@ -1725,40 +1729,44 @@ video {
     font-weight: 800;
     color: #FFC700;
     font-family: 'Tmoney RoundWind';
-    margin-left: 26.5%;
-    margin-top: 52%;
+    margin-left: 30.3%;
+    margin-top: 49%;
 }
 
 #character #ch1-sub-txt {
     position: absolute;
     font-size: 1.25em;
     font-weight: 400;
-    margin-left: 19%;
-    margin-top: 58%;
+    margin-left: 22.5%;
+    margin-top: 54%;
     font-family: 'SUIT Variable';
     font-style: normal;
 }
 
 #ch1-images {
     position: absolute;
-    margin-left: 3%;
-    margin-top: 20%;
+    margin-left: 8%;
+    margin-top: 25%;
     display: flex;
     flex-direction: column;
 }
 
 #ch1-images img:nth-child(1) {
-    width: 8vw;
-    margin-left: 13%;
+    width: 6.2vw;
+    margin-left: 17%;
+}
+
+#ch1-images img:nth-child(2){
+    width:9.5vw;
 }
 
 #ch1-images img:nth-child(3) {
-    width: 9vw;
+    width: 6.8vw;
     margin-left: 17%;
 }
 
 #ch1-images img:nth-child(4) {
-    width: 11vw;
+    width: 8.3vw;
     margin-left: 5%;
 }
 
@@ -1768,16 +1776,16 @@ video {
     font-weight: 800;
     color: #5C59FF;
     font-family: 'Tmoney RoundWind';
-    margin-left: 68.1%;
-    margin-top: 52%;
+    margin-left: 64%;
+    margin-top: 49%;
 }
 
 #character #ch2-sub-txt {
     position: absolute;
     font-size: 1.25em;
     font-weight: 400;
-    margin-left: 60%;
-    margin-top: 58%;
+    margin-left: 55.8%;
+    margin-top: 54%;
     font-family: 'SUIT Variable';
     font-style: normal;
 }
@@ -1785,29 +1793,29 @@ video {
 
 #ch2-images {
     position: absolute;
-    margin-left: 85%;
-    margin-top: 21%;
+    margin-left: 83%;
+    margin-top: 24%;
     display: flex;
     flex-direction: column;
 }
 
 #ch2-images img:nth-child(1) {
-    width: 8vw;
+    width: 7vw;
     margin-left: 13%;
 }
 
 #ch2-images img:nth-child(2) {
-    width: 8vw;
+    width: 7vw;
     margin-left: 13%;
 }
 
 #ch2-images img:nth-child(3) {
-    width: 8vw;
+    width: 7vw;
     margin-left: 10%;
 }
 
 #ch2-images img:nth-child(4) {
-    width: 10vw;
+    width: 8vw;
     margin-left: 5%;
 }
 
@@ -1849,6 +1857,7 @@ video {
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 400;
+    word-break: keep-all;
 }
 
 .keyword-box {
@@ -2111,6 +2120,7 @@ video {
     margin-left: 53%;
     margin-top: 10%;
     line-height: 150%;
+    word-break: keep-all;
 }
 
 #app-reword p {
@@ -2823,9 +2833,17 @@ footer h1 {
     z-index: 1000;
 }
 
+#scrollTopbtn img{
+    width:4vw;
+}
+
 #scrollgame {
-    bottom: 20px;
-    right: 150px;
+    bottom: 130px;
+    right: 40px;
     position: fixed;
     z-index: 1000;
+}
+
+#scrollgame img{
+    width:4vw;
 }

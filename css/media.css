@@ -1,0 +1,963 @@
+@media all and (min-width:1440px){
+    .restart-button{
+        margin-top:48.7%;
+    }
+
+#scrollgame{
+    bottom:100px;
+}
+    /* header */
+header h1{
+    margin-left:-100px;
+    margin-top:15px;
+}
+header h1 img{
+    width:230px;
+    height:auto;
+}
+
+    #gnb{
+        margin-left:300px;
+    }
+/* main */
+    #main video{
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        align-items: center;
+        object-position:top;
+        object-fit: contain;
+    }
+
+    .btn-area button{
+        margin-top:700px;
+    }
+
+    .btn-area2 button{
+        margin-top:700px;
+    }
+/* survey */
+    #survey h2{
+        margin-left:24%;
+    }
+
+    #survey h1{
+        margin-left:24%;
+    }
+
+     /* service-target */
+    #service-target h2{
+        margin-top:24%;
+    }
+
+    /* ux-goal */
+    #ux-goal h1{
+        margin-left:13%;
+    }
+
+    .ux-goal-1 h2{
+        margin-left:26%;
+        margin-top:33%;
+    }
+
+    .ux-goal-2 h2{
+        margin-left:27%;
+        margin-top:39%;
+    }
+
+    .ux-goal-3 h2{
+        margin-left:27%;
+        margin-top:39%;
+    }
+
+    /* logo-design */
+
+    #logo-design h1{
+        margin-left:8%;
+    }
+
+    .logo-design-txt h2{
+        margin-left:19%;
+    }
+
+    .logo-design-txt p{
+        margin-left: 25%;
+    }
+
+    /* color */
+
+    #color h1{
+        margin-left:8%;
+    }
+
+    #color h2{
+        margin-left:8%;
+    }
+
+    .rookie-yellow h3{
+        margin-top:46%;
+    }
+
+    .rookie-yellow span{
+        margin-top:52%;
+    }
+
+    .pro-bluepurple h3{
+        margin-top:46%;
+        margin-left:33%;
+    }
+
+    .pro-bluepurple span{
+        margin-top:52%;
+        margin-left:43%;
+    }
+
+    .mate-white h3{
+        margin-top: 54%;
+        margin-left:30%;
+    }
+
+    .mate-white span{
+        margin-top:61%;
+        margin-left:42%;
+    }
+
+    /* icon */
+
+    #icon h1{
+        margin-left:8%;
+    }
+
+    .icon-logo-img{
+        width:10vw;
+        margin-left:8%;
+    }
+
+    #icon-img{
+        width:70vw;
+        margin-left:25%;
+    }
+
+    /* typography */
+
+    #typography h1{
+        margin-left:8%;
+    }
+
+    #typography h2{
+        margin-left:8%;
+    }
+
+    .typo-title{
+        margin-left:8%;
+        margin-top:28%;
+    }
+
+    .typo-app{
+        margin-left:8%;
+        margin-top:33%;
+    }
+
+    .typo-app-1{
+        margin-top:33%;
+    }
+
+    .typo-app-2{
+        margin-top:37%;
+    }
+
+    .typo-app-3{
+        margin-top:41%;
+    }
+
+    .typo-app-4{
+        margin-top:45%;
+    }
+
+    .typo-app-5{
+        margin-top:49%;
+    }
+
+    .typo-app-6{
+        margin-top:53%;
+    }
+
+    .typo-app-1, .typo-app-2, .typo-app-3,
+    .typo-app-4, .typo-app-5, .typo-app-6{
+        margin-left:15%;
+    }
+
+    .typo-web{
+        margin-left:43%;
+        margin-top:33%;
+    }
+
+    .typo-web-1{
+        margin-top:33%;
+    }
+
+    .typo-web-2{
+        margin-top: 37%;
+    }
+
+    .typo-web-3{
+        margin-top:41%;
+    }
+
+    .typo-web-4{
+        margin-top:45%;
+    }
+
+    .typo-web-5{
+        margin-top:49%;
+    }
+
+    .typo-web-6{
+        margin-top:53%;
+    }
+
+    .typo-web-7{
+        margin-top:57%;
+    }
+
+    .typo-web-1, .typo-web-2, .typo-web-3,
+    .typo-web-4, .typo-web-5, .typo-web-6, .typo-web-7{
+        margin-left:50%;
+    }
+
+    /* character */
+    #character h1{
+        margin-left:8%;
+    }
+
+    #character h2{
+        margin-left:30%;
+    }
+
+    #character span{
+        margin-left:28%;
+    }
+
+    #character-1{
+        width:29vw;
+        margin-left:19%;
+        margin-top:25%;
+    }
+    
+    #character-2{
+        width:21vw;
+        margin-top:24%;
+        margin-left:59.5%;
+    }
+
+    #character #ch1-txt{
+        margin-left:30%;
+        margin-top: 51%;
+    }
+
+    #character #ch1-sub-txt{
+        margin-top:57%;
+        margin-left:20%;
+    }
+
+    #ch1-images{
+        margin-left:8%;
+    }
+
+    #ch2-images{
+        margin-left:85%;
+    }
+
+    #character #ch2-txt{
+        margin-left:65%;
+        margin-top:51%;
+    }
+
+    #character #ch2-sub-txt{
+        margin-top:57%;
+        margin-left:55.3%;
+    }
+
+    /* design-keyword */
+    
+    #design-keyword h1{
+        margin-left:8%;
+    }
+
+    #design-keyword h2{
+        margin-left:8%;
+        word-break: keep-all;
+    }
+
+
+    /* app-main */
+
+    #app-logo{
+        margin-left:38%;
+    }
+
+    .app-main-txt{
+        margin-left:38%;
+    }
+
+    /* ch-select */
+
+    #ch-select .ch-sub{
+        margin-top:15%;
+    }
+
+    #ch-s1{
+        margin-top: 25%;
+    }
+
+    #ch-s2{
+        margin-top:25%;
+    }
+
+    #ch-s3{
+        margin-top:30%;
+    }
+
+    #ch-s4{
+        margin-top:36%;
+    }
+
+    #ch-s5{
+        margin-top:43%;
+    }
+
+    #ch-s6{
+        margin-top:48%;
+    }
+
+    #ch-select p{
+        margin-top:51.5%;
+    }
+
+    /* app-test */
+
+    #app-test p{
+        margin-top:19%;
+    }
+
+    #app-t1{
+        margin-top:28%;
+    }
+
+    #app-t2{
+        margin-top:28%;
+    }
+
+    #app-t3{
+        margin-top:18.5%;
+    }
+
+    /* app-reword */
+
+    #app-reword h1{
+        margin-left:48%;
+    }
+
+    #app-reword h2{
+        margin-left:48%;
+    }
+    
+    #app-reword p{
+        margin-left:48%;
+        margin-top:19%;
+    }
+
+    #app-r1{
+        margin-top:10%;
+        margin-left:3%;
+    }
+
+    #app-r2{
+        margin-top:36%;
+        margin-left:30%;
+    }
+
+    #app-r3{
+        margin-top:35.2%;
+        margin-left:50%;
+    }
+
+    /* app-video */
+
+    #app-video h1{
+        margin-left:8%;
+    }
+
+    #app-video h2{
+        margin-left:8%;
+    }
+
+    #app-video p{
+        margin-left:8%;
+        margin-top:23%;
+    }
+
+    #app-v1{
+        margin-top:12%;
+    }
+
+    #app-v2{
+        margin-top:25%;
+    }
+
+    #app-v3{
+        margin-top:33%;
+    }
+
+    /* app-chat */
+
+    #app-chat h1{
+        margin-left:8%;
+    }
+
+    #app-chat h2{
+        margin-left:8%;
+    }
+
+    #app-chat p{
+        margin-left:8%;
+        margin-top:19%;
+    }
+
+    #app-c1{
+        margin-top:30%;
+        margin-left:8%;
+    }
+
+    #app-c2{
+        margin-top:30%;
+        margin-left:23%;
+    }
+
+    #app-c3{
+        margin-top:30%;
+        margin-left:38%;
+    }
+
+    #app-c4{
+        margin-top:24%;
+        margin-left:50%;
+    }
+
+    #app-c5{
+        margin-top:30%;
+        margin-left:72%;
+    }
+
+    /* app-mini-game */
+
+
+    #app-mini-game h1{
+        margin-left:48%;
+    }
+
+    #app-mini-game h2{
+        margin-left:48%;
+    }
+
+    #app-mini-main-txt{
+        margin-left:48%;
+        margin-top:19%;
+    }
+
+    #app-m1{
+        margin-left:14%;
+    }
+
+    #app-m2{
+        margin-left:27%;
+    }
+
+    #app-m3, #app-m4, #app-m5, #app-m6{
+        margin-top: 35%;
+    }
+
+    #app-m7{
+        margin-top:28.3%;
+    }
+
+    #app-m8{
+        margin-top:29.5%;
+        margin-left:69%;
+    }
+
+    #app-mini-txt{
+        margin-left:58%;
+        margin-top:32%;
+    }
+
+    /* app-mypage */
+
+    #app-mypage h1{
+        margin-left:8%;
+    }
+
+    #app-mypage h2{
+        margin-left:8%;
+    }
+
+    #app-mypage p{
+        margin-left:8%;
+        margin-top:19%;
+    }
+
+    #app-my1{
+        margin-top:28%;
+    }
+
+    #app-my2{
+        margin-top:28%;
+    }
+
+    #app-my3{
+        margin-top:18.5%;
+    }
+
+    /* footer */
+
+    #profile li{
+        margin-left:9.8%;
+    }
+}
+
+@media all and (min-width:1728px){
+
+    .restart-button{
+        margin-top:50.8%;
+    }
+
+    #scrollgame {
+        bottom: 110px;
+    }
+    #gnb {
+        margin-left:600px;
+    }
+    .btn-area button{
+        margin-top:870px;
+    }
+
+    .btn-area2 button{
+        margin-top:870px;
+    }
+
+    #survey h2{
+        margin-left:28%;
+    }
+
+    #survey h1{
+        margin-left:28%;
+    }
+
+    #ux-goal h1{
+        margin-left:19%;
+    }
+
+    .ux-goal-1 h2{
+        margin-left:31%;
+        margin-top:36%;
+    }
+
+    .ux-goal-2 h2{
+        margin-left:31%;
+        margin-top:42%;
+    }
+
+    .ux-goal-3 h2{
+        margin-left:31%;
+        margin-top:42%;
+    }
+
+    .logo-design-txt h2{
+        margin-left:25%;
+    }
+
+    .logo-design-txt p{
+        margin-left:30.5%;
+    }
+
+    .rookie-yellow h3{
+        margin-top:38%;
+    }
+
+    .rookie-yellow span{
+        margin-top:43%;
+    }
+
+    .pro-bluepurple h3{
+        margin-top:38%;
+    }
+
+    .pro-bluepurple span{
+        margin-top:43%;
+    }
+
+    .mate-white h3{
+        margin-top:44%;
+    }
+
+    .mate-white span{
+        margin-top:49%;
+    }
+
+    #character-2{
+        margin-left:58%;
+    }
+
+    #character h2{
+        margin-left:32%;
+    }
+
+    #character span{
+        margin-left:30%;
+    }
+
+    #character #ch2-txt{
+        margin-left:64%;
+    }
+
+    #character #ch2-sub-txt{
+        margin-left:55.8%;
+    }
+
+    #app-logo{
+        margin-left:40%;
+    }
+
+    .app-main-txt{
+        margin-left:40%;
+    }
+
+    #profile li{
+        margin-left:11.6%;
+    }
+
+    #ch2-images{
+        margin-left:82.5%;
+    }
+}
+
+
+@media all and (min-width:1920px){
+    .restart-button{
+        margin-top:49.5%;
+    }
+    #scrollgame {
+        bottom: 130px;
+    }
+
+    #gnb{
+        margin-left:800px;
+    }
+
+    .btn-area button{
+        margin-top:950px;
+    }
+
+    .btn-area2 button{
+        margin-top:950px;
+    }
+
+    .typo-title{
+        margin-top:23%;
+    }
+
+    .typo-app{
+        margin-top:28%;
+    }
+
+    .typo-app-1{
+        margin-top:28%;
+    }
+
+    .typo-app-2{
+        margin-top:32%;
+    }
+
+    .typo-app-3{
+        margin-top:36%;
+    }
+
+    .typo-app-4{
+        margin-top:40%;
+    }
+
+    .typo-app-5{
+        margin-top:44%;
+    }
+
+    .typo-app-6{
+        margin-top:48%;
+    }
+
+    .typo-web{
+        margin-top:28%;
+    }
+
+    .typo-web-1{
+        margin-top:28%;
+    }
+
+    .typo-web-2{
+        margin-top:32%;
+    }
+
+    .typo-web-3{
+        margin-top:36%;
+    }
+
+    .typo-web-4{
+        margin-top:40%;
+    }
+
+    .typo-web-5{
+        margin-top:44%;
+    }
+
+    .typo-web-6{
+        margin-top:48%;
+    }
+
+    .typo-web-7{
+        margin-top:52%;
+    }
+
+    #app-logo{
+        margin-left:41%;
+    }
+
+    .app-main-txt{
+        margin-left:41%;
+    }
+
+    /* ux-goal */
+    #ux-goal h1{
+        margin-left:23%;
+    }
+
+    .ux-goal-1 h2{
+        margin-left:32%;
+        margin-top:38%;
+    }
+
+    .ux-goal-2 h2{
+        margin-left:33%;
+        margin-top:44%;
+    }
+
+    .ux-goal-3 h2{
+        margin-left:33%;
+        margin-top:44%;
+    }
+
+    /* logo-design */
+
+    .logo-design-txt h2{
+        margin-left:27%;
+    }
+
+    .logo-design-txt p{
+        margin-left:32%;
+    }
+
+    /* character */
+    #character h2{
+        margin-left:35%;
+    }
+
+    #character span{
+        margin-left:33%;
+    }
+
+    #character-1{
+        width:25vw;
+        margin-left:24%;
+    }
+
+    #character-2{
+        width:17.8vw;
+        margin-left:58%;
+    }
+
+    #character #ch1-txt{
+        margin-left:34%;
+        margin-top:45%;
+    }
+
+    #character #ch1-sub-txt{
+        margin-top:50%;
+        margin-left:26.5%;
+    }
+
+    #ch1-images{
+        margin-top:20%;
+        margin-left:12%;
+    }
+
+    #character #ch2-txt{
+        margin-top:45%;
+        margin-left:63.1%;
+    }
+
+    #character #ch2-sub-txt{
+        margin-top:50%;
+        margin-left:55.5%;
+    }
+
+    #ch2-images{
+        margin-top:18%;
+        margin-left:81%;
+    }
+
+    #ch-s1{
+        margin-top:21%;
+        width:16vw;
+    }
+
+    #ch-s2{
+        margin-top:21%;
+        width:16vw;
+        margin-left:31%;
+    }
+
+    #ch-s3{
+        margin-top:25%;
+        margin-left:55%;
+    }
+
+    #ch-s4{
+        margin-top:31%;
+        margin-left:55%;
+    }
+
+    #ch-s5{
+        margin-top:38%;
+        margin-left:55%;
+    }
+
+    #ch-s6{
+        margin-top:43%;
+        margin-left:59%;
+    }
+
+    #ch-select p{
+        margin-top:46.5%;
+        margin-left:63%;
+    }
+
+    #ch-select .ch-sub{
+        margin-top:14%;
+    }
+
+    #app-test p{
+        margin-top:18%;
+    }
+
+    #app-t1{
+        margin-top:23%;
+        width:14vw;
+        margin-left:37%;
+    }
+
+    #app-t2{
+        margin-top:23%;
+        width:14vw;
+        margin-left:52.9%;
+    }
+
+    #app-t3{
+        margin-top:13.5%;
+        width:27vw;
+        margin-left: 65%;
+    }
+
+    #app-reword p{
+        margin-top:18%;
+    }
+
+    #app-r1{
+        margin-left:10%;
+        margin-top:5%;
+    }
+
+    #app-r2{
+        margin-top:31%;
+        margin-left: 37%;
+    }
+
+    #app-r3{
+        margin-top:30.2%;
+        margin-left:57%;
+    }
+
+    #app-video p{
+        margin-top:21%;
+    }
+
+    #app-v1{
+        margin-top:7%;
+    }
+    
+    #app-v2{
+        margin-top:20%;
+    }
+
+    #app-v3{
+        margin-top:28%;
+    }
+
+    #app-chat p{
+        margin-top:18%;
+    }
+
+    #app-c1{
+        margin-top:25%;
+    }
+
+    #app-c2{
+        margin-top:25%;
+    }
+
+    #app-c3{
+        margin-top:25%;
+    }
+
+    #app-c4{
+        margin-top:19%;
+    }
+
+    #app-c5{
+        margin-top:25%;
+    }
+
+    #app-mini-main-txt{
+        margin-top:18%;
+    }
+
+    #app-mypage p{
+        margin-top:18%;
+    }
+
+    #app-my1{
+        margin-top:23%;
+    }
+
+    #app-my2{
+        margin-top:23%;
+    }
+
+    #app-my3{
+        margin-top:13.5%;
+    }
+
+
+    /* footer */
+    #profile li{
+        margin-left:13%;
+    }
+}
