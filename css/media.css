@@ -1,5 +1,5 @@
 @media all and (min-width:1440px){
-    .restart-button{
+    #restart-button{
         margin-top:48.7%;
     }
 
@@ -528,8 +528,8 @@ header h1 img{
 
 @media all and (min-width:1728px){
 
-    .restart-button{
-        margin-top:50.8%;
+    #restart-button{
+        margin-top:50.4%;
     }
 
     #scrollgame {
@@ -644,9 +644,10 @@ header h1 img{
 
 
 @media all and (min-width:1920px){
-    .restart-button{
+    #restart-button{
         margin-top:49.5%;
     }
+
     #scrollgame {
         bottom: 130px;
     }

@@ -86,16 +86,6 @@
 
 
 
-    #news {
-        width: 100%;
-        height: 1080px;
-        background-image: url("/image/news1.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        color: #fff;
-        background-attachment: fixed;
-    }
-
 #wrapper {
     width: 100%;
     position: static;
@@ -209,30 +199,6 @@ video {
     margin-left:5%;
 }
 
-.on-img{
-    background-image:url('/image/mate-on.png');
-    background-repeat:no-repeat;
-    background-size: contain;
-}
-
-.off-img{
-    background-image:url('/image/mate-off.png');
-    background-repeat:no-repeat;
-    background-size: contain;
-}
-
-.restart-button{
-    position:absolute;
-    display:inline-block;
-    width:12vw;
-    height:200px;
-    margin-left:20%;
-    background-image:url('/image/Restart.png');
-    background-repeat:no-repeat;
-    background-size: contain;
-    top:0;
-    margin-top:5%;
-}
 
 
 
@@ -506,15 +472,6 @@ video {
 
 /* news */
 
-#news {
-    width: 100%;
-    height: 1080px;
-    background-image: url("image/news1.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    color: #fff;
-    background-attachment: fixed;
-}
 
 #news .yellow {
     color: #FFC700;
@@ -2492,15 +2449,6 @@ video {
     width: 28vw;
 }
 
-#mokup {
-    width: 100%;
-    height: 1080px;
-    background-image: url("image/footer_mokup2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
 
 
 /* footer */
