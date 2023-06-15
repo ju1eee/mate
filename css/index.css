@@ -93,16 +93,18 @@
 }
 
 
+@media all and (min-width:1440px){
 /* header */
 header {
+    position:relative;
     width: 100%;
     height: 70px;
     position: fixed;
     z-index: 99999;
     transition: background-color 0.2s ease, color 0.2s ease;
-    color: #fff;
-
 }
+
+
 
 header:hover {
     background-color: #ffffff;
@@ -112,37 +114,37 @@ header:hover {
 
 header nav {
     max-width: 1920px;
-    min-width: 960px;
+    min-width: 1440px;
     line-height: 60px;
-
 }
 
 header h1 {
     float: left;
     margin-top: 10px;
-    margin-left: 45px;
+    margin-left: -5%;
     width: 120px;
     height: 100px;
 }
 
 header h1 img {
-    width: 270px;
-    height: 50px;
-    margin-top:2%;
+    width: 200px;
+    height: 35px;
+    margin-top:8%;
 }
 
 #gnb {
-    margin-left: 500px;
+    margin-left: 350px;
     line-height: 80px;
 }
 
 #gnb li {
     display: inline-block;
     margin-right: 80px;
-    font-size: 16px;
+    font-size: 0.94em;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
     position: relative;
+    /* color: #989898; */
 }
 
 
@@ -165,9 +167,9 @@ header h1 img {
 
 
 
-/* #gnb .blue {
+#gnb .blue {
     color: #5C59FF;
-} */
+}
 
 
 
@@ -179,7 +181,7 @@ header h1 img {
     position: relative;
 }
 
-video {
+#video {
     vertical-align: middle;
     display: inline-block;
     position: absolute;
@@ -190,16 +192,33 @@ video {
     object-fit: cover;
 }
 
+.btn-area{
+    bottom:100px;
+    left:60px;
+    position:absolute;
+    display:flex;
+}
+
 
 .image-toggle{
     position:absolute;
     width:12vw;
-    height:200px;
-    margin-left:5%;
+    height:30vw;
 }
 
-.button-area{
-    display:flex;
+.btn-area2{
+    bottom:100px;
+    position:absolute;
+    left:250px;
+}
+
+
+
+.restart-button{
+    position:absolute;
+    width:12vw;
+    height:200px;
+    margin-left:10%;
 }
 
 
@@ -234,7 +253,7 @@ video {
     height: 2vh;
     margin-left: 6%;
     margin-top: 12%;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .overview-ul-box {
@@ -530,7 +549,7 @@ video {
     height: 2vh;
     margin-left: 6%;
     margin-top: 4%;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .survey-ul-box {
@@ -556,7 +575,7 @@ video {
     margin-top: 7%;
     font-size: 1.25em;
     font-weight: 800;
-    margin-left: 29%;
+    margin-left: 25%;
     line-height: 100%;
     font-family: 'Tmoney RoundWind';
 }
@@ -570,7 +589,7 @@ video {
     position: absolute;
     text-align: center;
     margin-top: 10%;
-    margin-left: 29%;
+    margin-left: 25%;
     font-size: 1.25em;
     font-weight: 800;
     line-height: 100%;
@@ -598,11 +617,12 @@ video {
     position: absolute;
     font-size: 1.2em;
     margin-top: 5%;
-    margin-left: 23%;
+    margin-left: 15%;
     text-align: center;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 700;
+    line-height:120%;
 }
 
 #graph1 {
@@ -687,11 +707,12 @@ video {
     position: absolute;
     font-size: 1.2em;
     margin-top: 5%;
-    margin-left: 23%;
+    margin-left: 16%;
     text-align: center;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 700;
+    line-height:120%;
 }
 
 #survey-3 {
@@ -707,13 +728,14 @@ video {
 
 #survey-3 p {
     position: absolute;
-    font-size: 25px;
+    font-size: 1.2em;
     margin-top: 3%;
-    margin-left: 15%;
+    margin-left: 18%;
     text-align: center;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 700;
+    line-height:120%;
 }
 
 #survey-box2 {
@@ -878,8 +900,8 @@ video {
     width: 12vw;
     height: 2vh;
     margin-left: 6%;
-    margin-top: 4%;
-    font-size: 1em;
+    margin-top: 8%;
+    font-size: 0.8em;
 }
 
 .service-ul-box {
@@ -903,7 +925,7 @@ video {
     position: absolute;
     text-align: left;
     margin-top: 13%;
-    font-size: 3.13em;
+    font-size: 2.5em;
     font-weight: 800;
     margin-left: 6%;
     line-height: 140%;
@@ -946,7 +968,7 @@ video {
 
 .target_img {
     width: 30vw;
-    height: 250px;
+    height: 230px;
     background: #5C59FF;
     border-radius: 20px;
     display: flex;
@@ -956,7 +978,7 @@ video {
 
 .target_img2 {
     width: 30vw;
-    height: 250px;
+    height: 230px;
     background: #fff;
     color: #000;
     border-radius: 20px;
@@ -967,7 +989,7 @@ video {
 
 .target_img3 {
     width: 30vw;
-    height: 250px;
+    height: 230px;
     background: #5C59FF;
     border-radius: 20px;
     display: flex;
@@ -999,15 +1021,16 @@ video {
 
 .target_text {
     height: 17vw;
-    margin-top: 10%;
+    margin-top: 14%;
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    margin-left: -5%;
+    margin-left: -3%;
     word-break: keep-all;
     padding: 20px;
     font-family: 'SUIT Variable';
     font-style: normal;
+    font-size:0.8em;
 }
 
 .target_text p:nth-child(1) {
@@ -1051,8 +1074,8 @@ video {
     width: 12vw;
     height: 2vh;
     margin-left: 6%;
-    margin-top: 4%;
-    font-size: 1em;
+    margin-top: 8%;
+    font-size: 0.8em;
 }
 
 .ux-goal-ul-box {
@@ -1079,10 +1102,10 @@ video {
 #ux-goal h1 {
     position: absolute;
     text-align: left;
-    margin-top: 12%;
-    font-size: 2.8em;
+    margin-top: 15%;
+    font-size: 2.5em;
     font-weight: 800;
-    margin-left: 18%;
+    margin-left: 16%;
     text-align: center;
     font-family: 'Tmoney RoundWind';
     line-height: 135%;
@@ -1092,7 +1115,8 @@ video {
     width: 100%;
     height: 600px;
     position: absolute;
-    margin-top: 23%;
+    margin-top: 28%;
+    display:inline-block;
 }
 
 .ux-goal-1 {
@@ -1103,6 +1127,8 @@ video {
     margin-top: 3%;
     background: #fff;
     margin-left: 6%;
+    justify-content: center;
+    align-items: center;
 }
 
 .ux-goal-1 img {
@@ -1118,8 +1144,8 @@ video {
     text-align: center;
     line-height: 1.5em;
     font-weight: 700;
-    margin-top: 35%;
-    margin-left: 30%;
+    margin-top: 33%;
+    margin-left: 27%;
     display: block;
     justify-content: center;
     align-items: center;
@@ -1150,8 +1176,8 @@ video {
     text-align: center;
     line-height: 1.5em;
     font-weight: 700;
-    margin-top: 41%;
-    margin-left: 31%;
+    margin-top: 39%;
+    margin-left: 27%;
     display: block;
     justify-content: center;
     align-items: center;
@@ -1182,8 +1208,8 @@ video {
     text-align: center;
     line-height: 1.5em;
     font-weight: 700;
-    margin-top: 41%;
-    margin-left: 31%;
+    margin-top: 39%;
+    margin-left: 28%;
     display: block;
     justify-content: center;
     align-items: center;
@@ -1205,7 +1231,7 @@ video {
     height: 2vh;
     margin-left: 6%;
     margin-top: 4%;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .logo-design-ul-box {
@@ -1227,7 +1253,7 @@ video {
 
 #logo-design h1 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-left: 13%;
     margin-top: 10%;
     font-weight: 800;
@@ -1264,8 +1290,8 @@ video {
 .logo-design-txt h2 {
     position: absolute;
     margin-top: 40%;
-    margin-left: 24%;
-    font-size: 3.13em;
+    margin-left: 25.5%;
+    font-size: 2.5em;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
 }
@@ -1274,7 +1300,7 @@ video {
 .logo-design-txt p {
     position: absolute;
     margin-top: 46%;
-    margin-left: 30%;
+    margin-left: 25.5%;
     text-align: center;
     font-size: 1em;
     line-height: 170%;
@@ -1287,14 +1313,14 @@ video {
 
 #color {
     width: 100%;
-    height: 1080px;
+    height: 900px;
     background: #F4F4F4;
     position: relative;
 }
 
 #color h1 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-left: 13%;
     margin-top: 10%;
     font-weight: 800;
@@ -1304,7 +1330,7 @@ video {
 
 #color h2 {
     position: absolute;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 150%;
     margin-left: 13%;
     margin-top: 15%;
@@ -1324,14 +1350,14 @@ video {
 .rookie-yellow {
     background-color: #FFC700;
     width: 35%;
-    height: 386px;
+    height: 336px;
     position: absolute;
     border-radius: 80px 0 0 80px;
 }
 
 .rookie-yellow h3 {
     position: absolute;
-    font-size: 1.56em;
+    font-size: 1.38em;
     font-weight: 800;
     margin-top: 38%;
     margin-left: 38%;
@@ -1341,7 +1367,7 @@ video {
 
 .rookie-yellow span {
     position: absolute;
-    font-size: 0.94em;
+    font-size: 0.75em;
     font-weight: 600;
     margin-left: 44%;
     margin-top: 43%;
@@ -1353,14 +1379,14 @@ video {
 .pro-bluepurple {
     background-color: #5C59FF;
     width: 35%;
-    height: 386px;
+    height: 336px;
     position: absolute;
     left: 35%;
 }
 
 .pro-bluepurple h3 {
     position: absolute;
-    font-size: 1.56em;
+    font-size: 1.38em;
     font-weight: 800;
     margin-top: 38%;
     margin-left: 35%;
@@ -1371,7 +1397,7 @@ video {
 
 .pro-bluepurple span {
     position: absolute;
-    font-size: 0.94em;
+    font-size: 0.75em;
     font-weight: 600;
     margin-left: 44%;
     margin-top: 43%;
@@ -1383,7 +1409,7 @@ video {
 
 .mate-white {
     width: 30%;
-    height: 386px;
+    height: 336px;
     border-radius: 0 80px 80px 0;
     background-color: #fff;
     left: 70%;
@@ -1392,7 +1418,7 @@ video {
 
 .mate-white h3 {
     position: absolute;
-    font-size: 1.56em;
+    font-size: 1.38em;
     font-weight: 800;
     margin-top: 44%;
     margin-left: 32%;
@@ -1402,7 +1428,7 @@ video {
 
 .mate-white span {
     position: absolute;
-    font-size: 0.94em;
+    font-size: 0.75em;
     font-weight: 600;
     margin-left: 42%;
     margin-top: 49%;
@@ -1417,12 +1443,12 @@ video {
 #icon {
     position: relative;
     width: 100%;
-    height: 1080px;
+    height: 1000px;
 }
 
 #icon h1 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-left: 13%;
     margin-top: 10%;
     font-weight: 800;
@@ -1430,22 +1456,36 @@ video {
     font-family: 'Tmoney RoundWind';
 }
 
+#icon h2 {
+    position: absolute;
+    font-size: 1em;
+    line-height: 150%;
+    margin-left: 13%;
+    margin-top: 15%;
+    font-weight: 500;
+    font-family: 'SUIT Variable';
+    font-style: normal;
+}
+
 .icon-logo-img {
     position: absolute;
     margin-left: 13%;
-    margin-top: 21.5%;
+    margin-top: 25%;
 }
 
 .icon-logo-img img {
-    width: 70%;
-    height: 70%;
+    width: 193px;
+    height: 193px;
 }
 
 #icon-img {
     position: absolute;
-    margin-left: 28%;
-    margin-top: 21.41%;
+    margin-left: 32%;
+    margin-top: 25%;
+    width:781px;
+    height:300px;
 }
+
 
 
 /* typography */
@@ -1460,7 +1500,7 @@ video {
 
 #typography h1 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-left: 13%;
     margin-top: 10%;
     font-weight: 800;
@@ -1470,7 +1510,7 @@ video {
 
 #typography h2 {
     position: absolute;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 150%;
     margin-left: 13%;
     margin-top: 15%;
@@ -1492,7 +1532,7 @@ video {
     position: absolute;
     margin-left: 13%;
     margin-top: 28%;
-    font-size: 1.88em;
+    font-size: 1.56em;
     color: #FFC700;
     font-weight: 700;
 }
@@ -1501,7 +1541,7 @@ video {
     position: absolute;
     margin-left: 20%;
     margin-top: 28%;
-    font-size: 1.88em;
+    font-size: 1.5em;
     font-weight: 700;
     font-family: 'SUIT Variable';
     font-style: normal;
@@ -1510,8 +1550,8 @@ video {
 .typo-app-2 {
     position: absolute;
     margin-left: 20%;
-    margin-top: 32%;
-    font-size: 1.5em;
+    margin-top: 31%;
+    font-size: 1.38em;
     font-weight: 700;
     font-family: 'SUIT Variable';
     font-style: normal;
@@ -1520,8 +1560,8 @@ video {
 .typo-app-3 {
     position: absolute;
     margin-left: 20%;
-    margin-top: 36%;
-    font-size: 1.38em;
+    margin-top: 34%;
+    font-size: 1.25em;
     font-weight: 700;
     font-family: 'SUIT Variable';
     font-style: normal;
@@ -1530,8 +1570,8 @@ video {
 .typo-app-4 {
     position: absolute;
     margin-left: 20%;
-    margin-top: 40%;
-    font-size: 1.25em;
+    margin-top: 37%;
+    font-size: 1.13em;
     font-weight: 700;
     font-family: 'SUIT Variable';
     font-style: normal;
@@ -1540,8 +1580,8 @@ video {
 .typo-app-5 {
     position: absolute;
     margin-left: 20%;
-    margin-top: 44%;
-    font-size: 1.13em;
+    margin-top: 40%;
+    font-size: 1em;
     font-weight: 600;
     font-family: 'SUIT Variable';
     font-style: normal;
@@ -1550,7 +1590,7 @@ video {
 .typo-app-6 {
     position: absolute;
     margin-left: 20%;
-    margin-top: 48%;
+    margin-top: 43%;
     font-size: 0.94em;
     font-weight: 500;
     font-family: 'SUIT Variable';
@@ -1559,9 +1599,9 @@ video {
 
 .typo-web {
     position: absolute;
-    margin-left: 48%;
+    margin-left: 46%;
     margin-top: 28%;
-    font-size: 1.88em;
+    font-size: 1.56em;
     color: #FFC700;
     font-weight: 700;
 }
@@ -1569,44 +1609,44 @@ video {
 .typo-web-1 {
     position: absolute;
     margin-top: 28%;
-    margin-left: 55%;
-    font-size: 2.2em;
+    margin-left: 54%;
+    font-size: 1.69em;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
 }
 
 .typo-web-2 {
     position: absolute;
-    margin-top: 32%;
-    margin-left: 55%;
-    font-size: 2.1em;
+    margin-top: 31.5%;
+    margin-left: 54%;
+    font-size: 1.56em;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
 }
 
 .typo-web-3 {
     position: absolute;
-    margin-top: 36%;
-    margin-left: 55%;
-    font-size: 1.95em;
+    margin-top: 35%;
+    margin-left: 54%;
+    font-size: 1.38em;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
 }
 
 .typo-web-4 {
     position: absolute;
-    margin-top: 40%;
-    margin-left: 55%;
-    font-size: 1.83em;
+    margin-top: 38%;
+    margin-left: 54%;
+    font-size: 1.25em;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
 }
 
 .typo-web-5 {
     position: absolute;
-    margin-top: 44%;
-    margin-left: 55%;
-    font-size: 1.58em;
+    margin-top: 40.5%;
+    margin-left: 54%;
+    font-size: 1.56em;
     font-weight: 700;
     font-family: 'SUIT Variable';
     font-style: normal;
@@ -1614,9 +1654,9 @@ video {
 
 .typo-web-6 {
     position: absolute;
-    margin-top: 48%;
-    margin-left: 55%;
-    font-size: 1.26em;
+    margin-top: 43.5%;
+    margin-left: 54%;
+    font-size: 1.25em;
     font-weight: 700;
     font-family: 'SUIT Variable';
     font-style: normal;
@@ -1624,9 +1664,9 @@ video {
 
 .typo-web-7 {
     position: absolute;
-    margin-top: 52%;
-    margin-left: 55%;
-    font-size: 0.95em;
+    margin-top: 46%;
+    margin-left: 54%;
+    font-size: 0.94em;
     font-weight: 400;
     font-family: 'SUIT Variable';
     font-style: normal;
@@ -1642,7 +1682,7 @@ video {
 
 #character h1 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-left: 13%;
     margin-top: 10%;
     font-weight: 800;
@@ -1652,8 +1692,8 @@ video {
 
 #character h2 {
     position: absolute;
-    font-size: 3.13em;
-    margin-left: 32%;
+    font-size: 2.5em;
+    margin-left: 35%;
     margin-top: 14%;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
@@ -1661,9 +1701,9 @@ video {
 
 #character span {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     margin-top: 19%;
-    margin-left: 30%;
+    margin-left: 32.5%;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 500;
@@ -1671,34 +1711,34 @@ video {
 
 #character-1 {
     position: absolute;
-    width: 30%;
+    width: 28%;
     margin-top: 23.15%;
-    margin-left: 18%;
+    margin-left: 20%;
 }
 
 #character-2 {
     position: absolute;
-    width: 21%;
-    margin-top: 23.5%;
-    margin-left: 58%;
+    width: 19%;
+    margin-top: 24%;
+    margin-left: 59%;
 }
 
 #character #ch1-txt {
     position: absolute;
-    font-size: 3.13em;
+    font-size: 2.5em;
     font-weight: 800;
     color: #FFC700;
     font-family: 'Tmoney RoundWind';
-    margin-left: 30.3%;
-    margin-top: 49%;
+    margin-left: 31.4%;
+    margin-top: 48%;
 }
 
 #character #ch1-sub-txt {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 400;
-    margin-left: 22.5%;
-    margin-top: 54%;
+    margin-left: 23.5%;
+    margin-top: 53%;
     font-family: 'SUIT Variable';
     font-style: normal;
 }
@@ -1732,20 +1772,20 @@ video {
 
 #character #ch2-txt {
     position: absolute;
-    font-size: 3.13em;
+    font-size: 2.5em;
     font-weight: 800;
     color: #5C59FF;
     font-family: 'Tmoney RoundWind';
-    margin-left: 64%;
-    margin-top: 49%;
+    margin-left: 64.5%;
+    margin-top: 48%;
 }
 
 #character #ch2-sub-txt {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 400;
-    margin-left: 55.8%;
-    margin-top: 54%;
+    margin-left: 56%;
+    margin-top: 53%;
     font-family: 'SUIT Variable';
     font-style: normal;
 }
@@ -1799,7 +1839,7 @@ video {
 
 #design-keyword h1 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-left: 13%;
     margin-top: 10%;
     font-weight: 800;
@@ -1809,7 +1849,7 @@ video {
 
 #design-keyword h2 {
     position: absolute;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 150%;
     margin-left: 13%;
     margin-top: 14%;
@@ -1831,72 +1871,97 @@ video {
     clear: both;
 }
 
-/* app-main */
+       /* app-main */
 
-#app-main {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
+       #app-main {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+    
+    .app-main-container{
+    height: 100vh;
+      overflow-x: hidden;
+    
+    }
+    
+    .slide {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-position: center;
+    }
+    
+    #app-main-ul {
+        position: absolute;
+        width: 12vw;
+        height: 2vh;
+        margin-left: 6%;
+        margin-top: 4%;
+        font-size: 0.8em;
+    }
+    
+    .app-main-ul-box {
+        position: absolute;
+        background-color: #FFC700;
+        width: 8px;
+        height: 8px;
+        margin-top: 0px;
+        border-radius: 50px;
+    }
+    
+    .app-main-ul-txt {
+        margin-left: 10%;
+        font-size: 1em;
+        font-weight: 800;
+        color: #FFC700;
+        font-family: 'Tmoney RoundWind';
+    }
+    
+    #app-logo {
+        position: absolute;
+        margin-left: 38%;
+        margin-top: 5%;
+    }
+    
+    #app-logo img {
+        width: 60%;
+    }
+    
+    .app-main-txt {
+        position: absolute;
+        font-size: 1.56em;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-top: 11%;
+        margin-left: 38%;
+    }
+    
+    .app-blue {
+        color: #5C59FF;
+    }
 
-#app-main-ul {
-    position: absolute;
-    width: 12vw;
-    height: 2vh;
-    margin-left: 6%;
-    margin-top: 4%;
-    font-size: 1em;
-}
+    #app-main-img {
+        background-position:53% 65%;
+    }
 
-.app-main-ul-box {
-    position: absolute;
-    background-color: #FFC700;
-    width: 8px;
-    height: 8px;
-    margin-top: 0px;
-    border-radius: 50px;
-}
+    #app-main-img1 {
+        background-position:53% 65%;
+    }
 
-.app-main-ul-txt {
-    margin-left: 10%;
-    font-size: 1em;
-    font-weight: 800;
-    color: #FFC700;
-    font-family: 'Tmoney RoundWind';
-}
+    #app-main-img2 {
+        background-position:53% 65%;
+    }
 
-#app-logo {
-    position: absolute;
-    margin-left: 40%;
-    margin-top: 5%;
-}
+    #app-main-img3 {
+        background-position:53% 65%;
+    }
 
-#app-logo img {
-    width: 60%;
-}
 
-.app-main-txt {
-    position: absolute;
-    font-size: 1.56em;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-top: 11%;
-    margin-left: 40%;
-}
-
-.app-blue {
-    color: #5C59FF;
-}
-
-#app-main-img {
-    position: absolute;
-    margin-left: 36.5%;
-    margin-top: 13%;
-}
-
-#app-main-img img {
-    width: 30vw;
-}
 
 
 /* ch-select */
@@ -1919,7 +1984,7 @@ video {
 
 #ch-select h2 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2.38em;
     color: #FFC700;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
@@ -1929,7 +1994,7 @@ video {
 
 #ch-select .ch-sub {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 160%;
     margin-left: 13%;
     margin-top: 14%;
@@ -1941,15 +2006,15 @@ video {
 #ch-s1 {
     position: absolute;
     margin-left: 13%;
-    margin-top: 20%;
-    width: 18vw;
+    margin-top: 22%;
+    width: 16vw;
 }
 
 #ch-s2 {
     position: absolute;
-    margin-left: 32%;
-    margin-top: 20%;
-    width: 18vw;
+    margin-left: 30%;
+    margin-top: 22%;
+    width: 16vw;
 }
 
 #ch-s3 {
@@ -1982,7 +2047,7 @@ video {
 
 #ch-select p {
     position: absolute;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-left: 66%;
     margin-top: 46.5%;
     font-family: 'SUIT Variable';
@@ -2011,7 +2076,7 @@ video {
 
 #app-test h2 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2.38em;
     color: #5C59FF;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
@@ -2022,10 +2087,10 @@ video {
 
 #app-test p {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 160%;
     margin-left: 13%;
-    margin-top: 18%;
+    margin-top: 19%;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 500;
@@ -2033,23 +2098,23 @@ video {
 
 #app-t1 {
     position: absolute;
-    margin-top: 23%;
-    margin-left: 38%;
-    width: 15vw;
+    margin-top: 26%;
+    margin-left: 33%;
+    width: 14vw;
 }
 
 #app-t2 {
     position: absolute;
-    margin-top: 23%;
-    margin-left: 54.5%;
-    width: 15vw;
+    margin-top: 26%;
+    margin-left: 49%;
+    width: 14vw;
 }
 
 #app-t3 {
     position: absolute;
-    margin-top: 13.5%;
-    margin-left: 67%;
-    width: 28vw;
+    margin-top: 19%;
+    margin-left: 61.5%;
+    width: 25vw;
 }
 
 
@@ -2068,16 +2133,16 @@ video {
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
     margin-top: 7%;
-    margin-left: 53%;
+    margin-left: 48%;
 }
 
 #app-reword h2 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2.38em;
     color: #FFC700;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
-    margin-left: 53%;
+    margin-left: 48%;
     margin-top: 10%;
     line-height: 150%;
     word-break: keep-all;
@@ -2085,10 +2150,10 @@ video {
 
 #app-reword p {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 160%;
-    margin-left: 53%;
-    margin-top: 18%;
+    margin-left: 48%;
+    margin-top: 19%;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 500;
@@ -2096,23 +2161,23 @@ video {
 
 #app-r1 {
     position: absolute;
-    margin-left: 8%;
+    margin-left: 10%;
     margin-top: 5%;
-    width: 30vw;
+    width: 28vw;
 }
 
 #app-r2 {
     position: absolute;
-    width: 24vw;
-    margin-top: 31%;
+    width: 22vw;
+    margin-top: 30%;
     margin-left: 35%;
 }
 
 #app-r3 {
     position: absolute;
-    width: 18vw;
-    margin-top: 30.2%;
-    margin-left: 55%;
+    width: 16vw;
+    margin-top: 30%;
+    margin-left: 54%;
 }
 
 /* app-video */
@@ -2135,7 +2200,7 @@ video {
 
 #app-video h2 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2.38em;
     color: #5C59FF;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
@@ -2146,10 +2211,10 @@ video {
 
 #app-video p {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 160%;
     margin-left: 13%;
-    margin-top: 22%;
+    margin-top: 23%;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 500;
@@ -2197,7 +2262,7 @@ video {
 
 #app-chat h2 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2.38em;
     color: #FFC700;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
@@ -2208,10 +2273,10 @@ video {
 
 #app-chat p {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 160%;
     margin-left: 13%;
-    margin-top: 18%;
+    margin-top: 19%;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 500;
@@ -2220,36 +2285,36 @@ video {
 #app-c1 {
     position: absolute;
     margin-left: 13%;
-    margin-top: 25%;
-    width: 13vw;
+    margin-top: 28%;
+    width: 12vw;
 }
 
 #app-c2 {
     position: absolute;
     margin-left: 27%;
-    margin-top: 25%;
-    width: 13vw;
+    margin-top: 28%;
+    width: 12vw;
 }
 
 #app-c3 {
     position: absolute;
     margin-left: 41%;
-    margin-top: 25%;
-    width: 13vw;
+    margin-top: 28%;
+    width: 12vw;
 }
 
 #app-c4 {
     position: absolute;
-    margin-left: 52%;
-    margin-top: 19%;
+    margin-left: 51.5%;
+    margin-top: 20%;
     width: 23vw;
 }
 
 #app-c5 {
     position: absolute;
     margin-left: 73%;
-    margin-top: 25%;
-    width: 13vw;
+    margin-top: 28%;
+    width: 12vw;
 }
 
 /* app-mini-game */
@@ -2272,7 +2337,7 @@ video {
 
 #app-mini-game h2 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2.38em;
     color: #5C59FF;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
@@ -2283,10 +2348,10 @@ video {
 
 #app-mini-main-txt {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 160%;
     margin-left: 53%;
-    margin-top: 18%;
+    margin-top: 19%;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 500;
@@ -2355,6 +2420,7 @@ video {
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 500;
+    font-size:0.8em;
 }
 
 
@@ -2371,8 +2437,8 @@ video {
     font-size: 4em;
     color: #FFC700;
     font-weight: 800;
-    margin-top: 33%;
-    margin-left: 7%;
+    margin-top: 36%;
+    margin-left: 5%;
     z-index: 10;
 }
 
@@ -2383,7 +2449,7 @@ video {
     margin-left: 54%;
     padding-left: 12%;
     text-align: center;
-    margin-top: 32%;
+    margin-top: 35%;
     font-weight: 800;
     color: #5C59FF;
     font-family: 'Tmoney RoundWind';
@@ -2411,7 +2477,7 @@ video {
 
 #app-mypage h2 {
     position: absolute;
-    font-size: 2.5em;
+    font-size: 2.38em;
     color: #FFC700;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
@@ -2422,10 +2488,10 @@ video {
 
 #app-mypage p {
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 160%;
     margin-left: 13%;
-    margin-top: 18%;
+    margin-top: 19%;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 500;
@@ -2433,23 +2499,23 @@ video {
 
 #app-my1 {
     position: absolute;
-    margin-top: 23%;
-    margin-left: 38%;
-    width: 15vw;
+    margin-top: 28%;
+    margin-left: 39.3%;
+    width: 12vw;
 }
 
 #app-my2 {
     position: absolute;
-    margin-top: 23%;
-    margin-left: 54.5%;
-    width: 15vw;
+    margin-top: 28%;
+    margin-left: 53%;
+    width: 12vw;
 }
 
 #app-my3 {
     position: absolute;
-    margin-top: 13.5%;
-    margin-left: 67%;
-    width: 28vw;
+    margin-top: 16.5%;
+    margin-left: 63%;
+    width: 25vw;
 }
 
 
@@ -2466,51 +2532,116 @@ footer {
 footer h1 {
     width: 100%;
     color: #FFC700;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 800;
     text-align: center;
     padding-top: 10rem;
     font-family: 'Tmoney RoundWind';
+    align-items: center;
+    vertical-align: center;
 }
+
+footer h2 {
+    width: 100%;
+    color: #FFC700;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+    margin-top:1%;
+    font-family: 'Tmoney RoundWind';
+    align-items: center;
+    vertical-align: center;
+}
+
 
 #profile {
     display: flex;
     width: 100%;
+    vertical-align: center;
+    align-items: center;
+    object-fit: center;
+    object-position: center;
 }
 
 #profile li {
-    margin-left: 11.6%;
+    margin-left: 9.5%;
     text-align: center;
     padding-top: 5%;
-    color: #5C59FF;
+    color: #5C59FF;   
+}
+
+#profile li h2{
+    color: #5C59FF;   
 }
 
 #profile li img {
-    width: 250px;
+    width:272px;
+    height:272px;
+    transition: all 0.3s ease-in-out;
 }
+
+
+
+#profile li img:nth-of-type(1):hover{
+    opacity: 0;
+}
+
+#profile li img:nth-of-type(2):hover{
+    opacity: 0;
+}
+
+#profile li img:nth-of-type(3):hover{
+    opacity: 0;
+}
+
+#profile li:nth-of-type(1):hover{
+    background-image:url('/image/speech1.png');
+    background-repeat:no-repeat;
+    background-size:85%;
+    background-position:30px 120px;
+}
+#profile li:nth-of-type(2):hover{
+    background-image:url('/image/speech2.png');
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:0 100px;
+}
+
+#profile li:nth-of-type(3):hover{
+    background-image:url('/image/speech3.png');
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:0 100px;
+}
+
 
 #profile li h2 {
     font-size: 2.5em;
     font-weight: 800;
-    margin-top: 10%;
+    margin-top: 17%;
     font-family: 'Tmoney RoundWind';
 }
+
+
 
 .position {
     font-size: 1.5em;
     font-weight: 800;
     font-family: 'Tmoney RoundWind';
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
-.email {
+#email {
     font-size: 1.56em;
     line-height: 30px;
-    padding: 50px 0 100px 0;
+    margin-top:20%;
     font-family: 'SUIT Variable';
     font-style: normal;
     font-weight: 500;
+    margin-bottom:30%;
 }
+
+
 
 .footer-bottom {
     position: absolute;
@@ -2525,9 +2656,18 @@ footer h1 {
     margin-top: 3%;
 }
 
+
+.pro1 img img{
+    width:240px;
+    height:240px;
+}
+
+
+
+
 .footer-bottom1 {
     position: absolute;
-    font-size: 1.13em;
+    font-size: 0.94em;
     margin-left: 12%;
     margin-top: 5.5%;
     color: #fff;
@@ -2544,7 +2684,7 @@ footer h1 {
 }
 
 .footer-right p:nth-of-type(1) {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 600;
     line-height: 150%;
     font-family: 'SUIT Variable';
@@ -2552,7 +2692,7 @@ footer h1 {
 }
 
 .footer-right p:nth-of-type(2) {
-    font-size: 1.13em;
+    font-size: 0.94em;
     font-weight: 600;
     line-height: 150%;
     font-family: 'SUIT Variable';
@@ -2560,7 +2700,7 @@ footer h1 {
 }
 
 .footer-right p:nth-of-type(3) {
-    font-size: 1.13em;
+    font-size: 0.94em;
     font-weight: 600;
     line-height: 150%;
     font-family: 'SUIT Variable';
@@ -2568,7 +2708,7 @@ footer h1 {
 }
 
 .footer-right p:nth-of-type(4) {
-    font-size: 1.13em;
+    font-size: 0.94em;
     font-weight: 600;
     line-height: 150%;
     font-family: 'SUIT Variable';
@@ -2576,7 +2716,7 @@ footer h1 {
 }
 
 .footer-right p:nth-of-type(5) {
-    font-size: 1.13em;
+    font-size: 0.94em;
     font-weight: 600;
     line-height: 150%;
     margin-top: 5%;
@@ -2593,7 +2733,7 @@ footer h1 {
 }
 
 .copyright {
-    font-size: 1.13em;
+    font-size: 0.94em;
     position: absolute;
     font-weight: 600;
     margin-left: 12%;
@@ -2777,9 +2917,10 @@ footer h1 {
 }
 
 
+
 #scrollTopbtn {
-    bottom: 20px;
-    right: 40px;
+    bottom:20px;
+    right:30px;
     position: fixed;
     z-index: 1000;
 }
@@ -2788,13 +2929,15 @@ footer h1 {
     width:4vw;
 }
 
-#scrollgame {
-    bottom: 130px;
-    right: 40px;
+#scrollgame{
+    bottom:20px;
+    right:130px;
     position: fixed;
     z-index: 1000;
 }
 
+
 #scrollgame img{
     width:4vw;
+}
 }

@@ -70,33 +70,6 @@ button:hover {
     user-select: none;
 }
 
-.color-red {
-    color: #F38181;
-}
-
-.color-blue {
-    color: #47B5FF;
-}
-
-.color-green {
-    color: #76BA99;
-}
-
-.bgChange {
-    animation: bgChangeEffect 400ms 2 alternate;
-}
-
-.blink {
-    animation: blinkingEffect 200ms 5 alternate;
-}
-
-.vibration {
-    animation: vibrationEffect 100ms infinite;
-}
-
-.zoom {
-    animation: zoomEffect 500ms 2 alternate;
-}
 
 @keyframes zoomEffect {
     to {

@@ -64,15 +64,6 @@ function scrollToTop() {
   });
   
 
-
-  
-  
-
-
-
-
-
-
 // $(document).ready(function() {
 //     var video = $("#video");
 //     var soundButton = $('.btn-sound');
@@ -176,4 +167,12 @@ document.addEventListener('contextmenu', function(e) {
 });
 
 
-
+$(function() {
+  $("#target_move").draggable({ 
+    axis: "x",
+    stop: function(event, ui) {
+      console.log("드래그 종료");
+      console.log("위치:", ui.position.left);
+    }
+  });
+});
