@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .hideme {
     opacity: 0;
 }
@@ -93,1809 +107,1810 @@
 }
 
 
-@media all and (min-width:1440px){
-/* header */
-header {
-    position:relative;
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    z-index: 99999;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
+@media all and (min-width:1440px) {
 
-
-
-header:hover {
-    background-color: #ffffff;
-    color: #000000;
-    opacity: 1;
-}
-
-header nav {
-    max-width: 1920px;
-    min-width: 1440px;
-    line-height: 60px;
-}
-
-header h1 {
-    float: left;
-    margin-top: 10px;
-    margin-left: -5%;
-    width: 120px;
-    height: 100px;
-}
-
-header h1 img {
-    width: 200px;
-    height: 35px;
-    margin-top:8%;
-}
-
-#gnb {
-    margin-left: 350px;
-    line-height: 80px;
-}
-
-#gnb li {
-    display: inline-block;
-    margin-right: 80px;
-    font-size: 0.94em;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    position: relative;
-    /* color: #989898; */
-}
-
-
-#gnb li::after {
-    content: '';
-    position: absolute;
-    bottom: 18px;
-    left: 0;
-    width: 0;
-    height: 5px;
-    background-color: #5C59FF;
-    transition: width 0.2s ease;
-    border-radius: 50px;
-}
-
-#gnb li:hover::after {
-    width: 100%;
-}
-
-
-
-
-#gnb .blue {
-    color: #5C59FF;
-}
-
-
-
-/* main */
-
-#main {
-    height: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-#video {
-    vertical-align: middle;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.btn-area{
-    bottom:100px;
-    left:60px;
-    position:absolute;
-    display:flex;
-}
-
-
-.image-toggle{
-    position:absolute;
-    width:12vw;
-    height:30vw;
-}
-
-.btn-area2{
-    bottom:100px;
-    position:absolute;
-    left:250px;
-}
-
-
-
-.restart-button{
-    position:absolute;
-    width:12vw;
-    height:200px;
-    margin-left:10%;
-}
-
-
-
-
-/* overview */
-
-#overview {
-    width: 100%;
-    height: 1080px;
-    background-color: #fff;
-    position: relative;
-}
-
-.overview-txt {
-    width: 64vw;
-    height: 29vh;
-    margin-top: 17%;
-    margin-left: 19%;
-    position: absolute;
-    z-index: 50;
-}
-
-.overview-txt h1 {
-    font-family: 'Tmoney RoundWind';
-    font-weight: 800;
-}
-
-#overview-ul {
-    position: absolute;
-    width: 12vw;
-    height: 2vh;
-    margin-left: 6%;
-    margin-top: 12%;
-    font-size: 0.8em;
-}
-
-.overview-ul-box {
-    position: absolute;
-    background-color: #5C59FF;
-    width: 8px;
-    height: 8px;
-    margin-top: 3px;
-    border-radius: 50px;
-}
-
-.overview-ul-txt {
-    margin-left: 10%;
-    font-size: 1em;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-}
-
-#overview h1 {
-    text-align: center;
-    margin-top: 3%;
-    font-size: 3.75em;
-    font-weight: bold;
-    line-height: 98px;
-}
-
-#overview p {
-    text-align: center;
-    margin-top: 2%;
-    font-size: 20px;
-    line-height: 150%;
-    font-family: 'SUIT Variable';
-    font-weight: 500;
-}
-
-.keyword {
-    width: 100%;
-    height: 500px;
-}
-
-#keyword-lbox {
-    padding-bottom: 130px;
-    width: 35vw;
-    height: 500px;
-    margin-top: 17%;
-    position: absolute;
-}
-
-#keyword-rbox {
-    padding-bottom: 130px;
-    width: 35vw;
-    height: 500px;
-    margin-top: 17%;
-    margin-left: 64%;
-    position: absolute;
-}
-
-#keyword-lbox .keyword {
-    position: relative;
-    width: 35vw;
-    height: 120px;
-    overflow: hidden;
-    float: left;
-}
-
-#keyword-rbox .keyword {
-    position: relative;
-    width: 35vw;
-    height: 120px;
-    overflow: hidden;
-    float: right;
-}
-
-#keyword-lbox .keyword:nth-child(1),
-.keyword:nth-child(5) {
-    --move-initial: 0%;
-    --move-final: -40%
-}
-
-#keyword-rbox,
-.keyword:nth-child(1),
-.keyword:nth-child(5) {
-    --move-initial: 0%;
-    --move-final: -40%
-}
-
-#keyword-lbox .keyword:nth-child(3) {
-    --move-initial: -18%;
-    --move-final: 10%
-}
-
-#keyword-rbox,
-.keyword:nth-child(3) {
-    --move-initial: -18%;
-    --move-final: 10%
-}
-
-#keyword-lbox .keyword-line {
-    width: max-content;
-    height: 130px;
-    position: relative;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: moving 13s linear infinite;
-    animation-play-state: running
-}
-
-#keyword-rbox .keyword-line {
-    width: max-content;
-    height: 130px;
-    position: relative;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: moving 13s linear infinite;
-    animation-play-state: running;
-}
-
-#keyword-lbox .keyword-line:hover {
-    animation-play-state: paused
-}
-
-#keyword-rbox .keyword-line:hover {
-    animation-play-state: paused
-}
-
-
-
-@keyframes moving {
-    0% {
-        transform: translate3d(var(--move-initial), 0, 0)
+    /* header */
+    header {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        z-index: 99999;
+        transition: background-color 0.2s ease, color 0.2s ease;
     }
 
-    100% {
-        transform: translate3d(var(--move-final), 0, 0)
+
+
+    header:hover {
+        background-color: #ffffff;
+        color: #000000;
+        opacity: 1;
     }
-}
-
-#keyword-lbox .keyword-line li {
-    float: left;
-    font-size: 2.4em;
-    font-weight: 300;
-    border-radius: 75px;
-    padding: 25px 45px;
-    margin: 1%;
-    margin-left: 0
-}
-
-#keyword-rbox .keyword-line li {
-    float: right;
-    font-size: 2.4em;
-    font-weight: 300;
-    border-radius: 75px;
-    padding: 25px 45px;
-    margin: 1%;
-    margin-right: 0
-}
-
-#keyword-lbox .keyword-line li:last-child {
-    margin-right: 0
-}
-
-#keyword-rbox .keyword-line li:last-child {
-    margin-right: 0
-}
-
-#keyword-lbox .keyword-line .keyword-blue {
-    border: 1px solid #5C59FF;
-    color: #5C59FF;
-}
-
-#keyword-lbox .keyword-line .keyword-blue:hover {
-    background-color: #5C59FF;
-    color: #fff;
-    cursor: pointer;
-}
-
-#keyword-rbox .keyword-line .keyword-blue {
-    border: 1px solid #5C59FF;
-    color: #5C59FF;
-}
-
-#keyword-rbox .keyword-line .keyword-blue:hover {
-    background-color: #5C59FF;
-    color: #fff;
-    cursor: pointer;
-}
-
-
-
-#keyword-lbox .keyword-line .keyword-yellow {
-    border: 1px solid #FFC700;
-    color: #FFC700;
-}
-
-#keyword-rbox .keyword-line .keyword-yellow {
-    border: 1px solid #FFC700;
-    color: #FFC700;
-}
-
-
-#keyword-lbox .keyword-line .keyword-yellow:hover {
-    background-color: #FFC700;
-    color: #fff;
-    cursor: pointer
-}
-
-#keyword-rbox .keyword-line .keyword-yellow:hover {
-    background-color: #FFC700;
-    color: #fff;
-    cursor: pointer
-}
-
-
-#keyword-lbox #fade_L {
-    width: 17vw;
-    height: 450px;
-    position: relative;
-    top: -27%;
-}
-
-#keyword-rbox #fade_R {
-    width: 17vw;
-    height: 450px;
-    position: relative;
-    top: -27%;
-}
-
-#keyword-lbox #fade_L {
-    background: linear-gradient(88.27deg, rgb(255, 255, 255) 9.34%, rgba(255, 255, 255, 0) 98.31%);
-    float: left;
-    left: -5%;
-}
-
-#keyword-rbox #fade_R {
-    background: linear-gradient(-88.27deg, rgb(255, 255, 255) 9.34%, rgba(255, 255, 255, 0) 98.31%);
-    float: right;
-}
-
-
-/* news */
-
-
-#news .yellow {
-    color: #FFC700;
-}
-
-#news h1 {
-    position: absolute;
-    text-align: left;
-    margin-top: 10%;
-    font-size: 2.4em;
-    font-weight: 800;
-    margin-left: 6%;
-    line-height: 135%;
-    font-family: 'Tmoney RoundWind';
-}
-
-#news-1 {
-    position: absolute;
-    text-align: left;
-    margin-top: 21%;
-    font-size: 1em;
-    margin-left: 6%;
-    line-height: 150%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#news-2 {
-    position: absolute;
-    text-align: left;
-    margin-top: 27%;
-    font-size: 1em;
-    margin-left: 6%;
-    line-height: 150%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-
-/* survey */
-
-#survey {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#survey-ul {
-    position: absolute;
-    width: 12vw;
-    height: 2vh;
-    margin-left: 6%;
-    margin-top: 4%;
-    font-size: 0.8em;
-}
-
-.survey-ul-box {
-    position: absolute;
-    background-color: #5C59FF;
-    width: 8px;
-    height: 8px;
-    margin-top: 0px;
-    border-radius: 50px;
-}
-
-.survey-ul-txt {
-    margin-left: 10%;
-    font-size: 1em;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-}
-
-#survey h2 {
-    position: absolute;
-    text-align: center;
-    margin-top: 7%;
-    font-size: 1.25em;
-    font-weight: 800;
-    margin-left: 25%;
-    line-height: 100%;
-    font-family: 'Tmoney RoundWind';
-}
-
-#survey .blue {
-    color: #5C59FF;
-    font-size: 2em;
-}
-
-#survey h1 {
-    position: absolute;
-    text-align: center;
-    margin-top: 10%;
-    margin-left: 25%;
-    font-size: 1.25em;
-    font-weight: 800;
-    line-height: 100%;
-    font-family: 'Tmoney RoundWind';
-}
-
-#survey-1 {
-    position: absolute;
-    width: 30vw;
-    height: 22vw;
-    background: #fff;
-    box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    margin-top: 15%;
-    margin-left: 18%;
-}
-
-#survey-box {
-    position: absolute;
-    width: 28vw;
-    height: 22vw;
-}
-
-#survey-1 p {
-    position: absolute;
-    font-size: 1.2em;
-    margin-top: 5%;
-    margin-left: 15%;
-    text-align: center;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 700;
-    line-height:120%;
-}
-
-#graph1 {
-    position: absolute;
-    width: 15vw;
-    height: 15vw;
-    margin-top: 18%;
-    margin-left: 15%;
-}
-
-#survey-box #percent1 {
-    position: absolute;
-    margin-top: 31%;
-    margin-left: 31%;
-    font-size: 1.5em;
-    color: #fff;
-}
-
-#survey-box #percent2 {
-    position: absolute;
-    margin-top: 38%;
-    margin-left: 59%;
-    font-size: 1em;
-    color: #888;
-}
-
-#survey-box #percent3 {
-    position: absolute;
-    margin-top: 54%;
-    margin-left: 37%;
-    font-size: 1.5em;
-    color: #fff;
-}
-
-#survey-box #per-txt1 {
-    position: absolute;
-    margin-top: 18%;
-    margin-left: 67%;
-    font-size: 0.94em;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#survey-box #per-txt2 {
-    position: absolute;
-    margin-top: 65%;
-    margin-left: 70%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#arrow1 {
-    position: absolute;
-    width: 3vw;
-    margin-top: 20%;
-    margin-left: 54%;
-    transform: rotate(100deg);
-}
-
-#arrow2 {
-    position: absolute;
-    width: 3vw;
-    margin-top: 58%;
-    margin-left: 54%;
-    transform: rotate(150deg);
-}
-
-#survey-2 {
-    position: absolute;
-    width: 30vw;
-    height: 22vw;
-    background: #fff;
-    box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    margin-top: 15%;
-    margin-left: 50%;
-}
-
-#survey-2 p {
-    position: absolute;
-    font-size: 1.2em;
-    margin-top: 5%;
-    margin-left: 16%;
-    text-align: center;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 700;
-    line-height:120%;
-}
-
-#survey-3 {
-    position: absolute;
-    width: 63vw;
-    height: 16vw;
-    background: #fff;
-    box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    margin-top: 39%;
-    margin-left: 17.4%;
-}
-
-#survey-3 p {
-    position: absolute;
-    font-size: 1.2em;
-    margin-top: 3%;
-    margin-left: 18%;
-    text-align: center;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 700;
-    line-height:120%;
-}
-
-#survey-box2 {
-    position: absolute;
-    width: 28vw;
-    height: 22vw;
-}
-
-#graph2 {
-    position: absolute;
-    width: 15vw;
-    height: 15vw;
-    margin-top: 18%;
-    margin-left: 15%;
-}
-
-#survey-box2 #percent4 {
-    position: absolute;
-    margin-top: 30%;
-    margin-left: 43%;
-    font-size: 1.5em;
-    color: #fff;
-}
-
-#survey-box2 #percent5 {
-    position: absolute;
-    margin-top: 54%;
-    margin-left: 37%;
-    font-size: 1.5em;
-    color: #fff;
-}
-
-#arrow3 {
-    position: absolute;
-    width: 3vw;
-    margin-top: 58%;
-    margin-left: 54%;
-    transform: rotate(150deg);
-}
-
-#survey-box2 #per-txt3 {
-    position: absolute;
-    margin-top: 65%;
-    margin-left: 70%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#survey-3 #per-txt4 {
-    position: absolute;
-    font-size: 1.5em;
-    color: #B5B5B5;
-    margin-top: 12%;
-    margin-left: 8%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#survey-3 #per-txt5 {
-    position: absolute;
-    font-size: 1.5em;
-    color: #B5B5B5;
-    margin-top: 10%;
-    margin-left: 30%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#survey-3 #per-txt6 {
-    position: absolute;
-    font-size: 1.5em;
-    color: #B5B5B5;
-    margin-top: 10%;
-    margin-left: 52%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#survey-3 #per-txt7 {
-    position: absolute;
-    font-size: 1.5em;
-    color: #B5B5B5;
-    margin-top: 12%;
-    margin-left: 78%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#survey-3 #per-txt8 {
-    position: absolute;
-    font-size: 1.5em;
-    color: #B5B5B5;
-    margin-top: 19%;
-    margin-left: 12%;
-    word-break: keep-all;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#survey-3 #per-txt9 {
-    position: absolute;
-    font-size: 1.5em;
-    color: #B5B5B5;
-    margin-top: 17%;
-    margin-left: 40%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-#survey-3 #per-txt10 {
-    position: absolute;
-    font-size: 1.5em;
-    color: #B5B5B5;
-    margin-top: 19%;
-    margin-left: 62%;
-    text-align: center;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-.term {
-    position: absolute;
-    font-size: 1em;
-    font-weight: 300;
-    margin-top: 57%;
-    margin-left: 17%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-.term-right {
-    position: absolute;
-    font-size: 1em;
-    font-weight: 300;
-    margin-top: 57%;
-    margin-left: 74%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 300;
-}
-
-
-/* service-target */
-
-#service-target {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#service-ul {
-    position: absolute;
-    width: 12vw;
-    height: 2vh;
-    margin-left: 6%;
-    margin-top: 8%;
-    font-size: 0.8em;
-}
-
-.service-ul-box {
-    position: absolute;
-    background-color: #5C59FF;
-    width: 8px;
-    height: 8px;
-    margin-top: 0px;
-    border-radius: 50px;
-}
-
-.service-ul-txt {
-    margin-left: 10%;
-    font-size: 1em;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-}
-
-#service-target h1 {
-    position: absolute;
-    text-align: left;
-    margin-top: 13%;
-    font-size: 2.5em;
-    font-weight: 800;
-    margin-left: 6%;
-    line-height: 140%;
-    font-family: 'Tmoney RoundWind';
-}
-
-#service-target .blue {
-    color: #5C59FF;
-}
-
-#service-target h2 {
-    position: absolute;
-    text-align: left;
-    margin-top: 22%;
-    font-size: 1em;
-    margin-left: 6%;
-    line-height: 150%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#target {
-    margin-top: 12%;
-}
-
-#target .content {
-    margin-top: 2%;
-    width: 42vw;
-}
-
-#target_move {
-    position: absolute;
-    width: 100%;
-    height: 220px;
-    display: flex;
-    margin-top: 34%;
-    margin-left: 8%;
-}
-
-.target_img {
-    width: 30vw;
-    height: 230px;
-    background: #5C59FF;
-    border-radius: 20px;
-    display: flex;
-    color: #fff;
-    box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
-}
-
-.target_img2 {
-    width: 30vw;
-    height: 230px;
-    background: #fff;
-    color: #000;
-    border-radius: 20px;
-    display: flex;
-    margin-left: 20%;
-    box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
-}
-
-.target_img3 {
-    width: 30vw;
-    height: 230px;
-    background: #5C59FF;
-    border-radius: 20px;
-    display: flex;
-    margin-left: 38%;
-    color: #fff;
-    box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
-}
-
-.target_img img {
-    width: 13vw;
-    height: 13vw;
-    margin-top: 5%;
-    margin-left: -20%;
-}
-
-.target_img2 img {
-    width: 11vw;
-    height: 11vw;
-    margin-top: 6%;
-    margin-left: -20%;
-}
-
-.target_img3 img {
-    width: 13vw;
-    height: 13vw;
-    margin-top: 5%;
-    margin-left: -20%;
-}
-
-.target_text {
-    height: 17vw;
-    margin-top: 14%;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    margin-left: -3%;
-    word-break: keep-all;
-    padding: 20px;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-size:0.8em;
-}
-
-.target_text p:nth-child(1) {
-    color: #fff;
-    font-size: 1em;
-    line-height: 170%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 700;
-}
-
-.target_text p:nth-child(2) {
-    font-size: 1.4em;
-    line-height: 150%;
-    margin-top: 19px;
-    color: #fff;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 700;
-}
-
-#persona-color p {
-    color: #000;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 700;
-}
-
-
-/* ux-goal */
-
-#ux-goal {
-    width: 100%;
-    height: 1080px;
-    background-color: #FFC700;
-    position: relative;
-}
-
-#ux-goal-ul {
-    position: absolute;
-    width: 12vw;
-    height: 2vh;
-    margin-left: 6%;
-    margin-top: 8%;
-    font-size: 0.8em;
-}
-
-.ux-goal-ul-box {
-    position: absolute;
-    background-color: #5C59FF;
-    width: 8px;
-    height: 8px;
-    margin-top: 0px;
-    border-radius: 50px;
-}
-
-.ux-goal-ul-txt {
-    margin-left: 10%;
-    font-size: 1em;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-}
-
-#ux-goal .blue {
-    color: #5C59FF;
-}
-
-#ux-goal h1 {
-    position: absolute;
-    text-align: left;
-    margin-top: 15%;
-    font-size: 2.5em;
-    font-weight: 800;
-    margin-left: 16%;
-    text-align: center;
-    font-family: 'Tmoney RoundWind';
-    line-height: 135%;
-}
-
-.ux-goal-box {
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    margin-top: 28%;
-    display:inline-block;
-}
-
-.ux-goal-1 {
-    position: absolute;
-    width: 25vw;
-    height: 25vw;
-    border-radius: 100%;
-    margin-top: 3%;
-    background: #fff;
-    margin-left: 6%;
-    justify-content: center;
-    align-items: center;
-}
-
-.ux-goal-1 img {
-    position: absolute;
-    width: 6vw;
-    height: 6vw;
-    margin-left: 5%;
-}
-
-.ux-goal-1 h2 {
-    position: absolute;
-    font-size: 1.88em;
-    text-align: center;
-    line-height: 1.5em;
-    font-weight: 700;
-    margin-top: 33%;
-    margin-left: 27%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.ux-goal-2 {
-    position: absolute;
-    width: 25vw;
-    height: 25vw;
-    border-radius: 100%;
-    margin-top: 3%;
-    background: #fff;
-    margin-left: 36%;
-}
-
-.ux-goal-2 img {
-    position: absolute;
-    width: 6vw;
-    height: 6vw;
-    margin-left: 5%;
-}
-
-.ux-goal-2 h2 {
-    position: absolute;
-    font-size: 1.88em;
-    text-align: center;
-    line-height: 1.5em;
-    font-weight: 700;
-    margin-top: 39%;
-    margin-left: 27%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.ux-goal-3 {
-    position: absolute;
-    width: 25vw;
-    height: 25vw;
-    border-radius: 100%;
-    margin-top: 3%;
-    background: #fff;
-    margin-left: 67%;
-}
-
-.ux-goal-3 img {
-    position: absolute;
-    width: 6vw;
-    height: 6vw;
-    margin-left: 5%;
-}
-
-.ux-goal-3 h2 {
-    position: absolute;
-    font-size: 1.88em;
-    text-align: center;
-    line-height: 1.5em;
-    font-weight: 700;
-    margin-top: 39%;
-    margin-left: 28%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-/* logo-design */
-
-#logo-design {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#logo-design-ul {
-    position: absolute;
-    width: 12vw;
-    height: 2vh;
-    margin-left: 6%;
-    margin-top: 4%;
-    font-size: 0.8em;
-}
-
-.logo-design-ul-box {
-    position: absolute;
-    background-color: #FFC700;
-    width: 8px;
-    height: 8px;
-    margin-top: 0px;
-    border-radius: 50px;
-}
-
-.logo-design-ul-txt {
-    margin-left: 10%;
-    font-size: 1em;
-    font-weight: 800;
-    color: #FFC700;
-    font-family: 'Tmoney RoundWind';
-}
-
-#logo-design h1 {
-    position: absolute;
-    font-size: 2em;
-    margin-left: 13%;
-    margin-top: 10%;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-}
-
-.logo-design-img {
-    position: absolute;
-}
-
-#design-logo1 {
-    width: 14vw;
-    height: 14vw;
-    position: absolute;
-    margin-top: 40%;
-    margin-left: 130%;
-}
-
-#design-logo2 {
-    width: 33vw;
-    margin-top: 85%;
-    margin-left: 100%;
-}
-
-.logo-design-txt .blue {
-    color: #5C59FF;
-}
-
-.logo-design-txt .yellow {
-    color: #FFC700;
-}
-
-.logo-design-txt h2 {
-    position: absolute;
-    margin-top: 40%;
-    margin-left: 25.5%;
-    font-size: 2.5em;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-}
-
-
-.logo-design-txt p {
-    position: absolute;
-    margin-top: 46%;
-    margin-left: 25.5%;
-    text-align: center;
-    font-size: 1em;
-    line-height: 170%;
-    font-weight: 500;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-/* color */
-
-#color {
-    width: 100%;
-    height: 900px;
-    background: #F4F4F4;
-    position: relative;
-}
-
-#color h1 {
-    position: absolute;
-    font-size: 2em;
-    margin-left: 13%;
-    margin-top: 10%;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-}
-
-#color h2 {
-    position: absolute;
-    font-size: 1em;
-    line-height: 150%;
-    margin-left: 13%;
-    margin-top: 15%;
-    font-weight: 500;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.color-box {
-    width: 75%;
-    height: 400px;
-    position: relative;
-    top: 43%;
-    left: 13%;
-}
-
-.rookie-yellow {
-    background-color: #FFC700;
-    width: 35%;
-    height: 336px;
-    position: absolute;
-    border-radius: 80px 0 0 80px;
-}
-
-.rookie-yellow h3 {
-    position: absolute;
-    font-size: 1.38em;
-    font-weight: 800;
-    margin-top: 38%;
-    margin-left: 38%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.rookie-yellow span {
-    position: absolute;
-    font-size: 0.75em;
-    font-weight: 600;
-    margin-left: 44%;
-    margin-top: 43%;
-    text-align: center;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.pro-bluepurple {
-    background-color: #5C59FF;
-    width: 35%;
-    height: 336px;
-    position: absolute;
-    left: 35%;
-}
-
-.pro-bluepurple h3 {
-    position: absolute;
-    font-size: 1.38em;
-    font-weight: 800;
-    margin-top: 38%;
-    margin-left: 35%;
-    color: #fff;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.pro-bluepurple span {
-    position: absolute;
-    font-size: 0.75em;
-    font-weight: 600;
-    margin-left: 44%;
-    margin-top: 43%;
-    text-align: center;
-    color: #fff;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.mate-white {
-    width: 30%;
-    height: 336px;
-    border-radius: 0 80px 80px 0;
-    background-color: #fff;
-    left: 70%;
-    position: absolute;
-}
-
-.mate-white h3 {
-    position: absolute;
-    font-size: 1.38em;
-    font-weight: 800;
-    margin-top: 44%;
-    margin-left: 32%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.mate-white span {
-    position: absolute;
-    font-size: 0.75em;
-    font-weight: 600;
-    margin-left: 42%;
-    margin-top: 49%;
-    text-align: center;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-
-/* icon */
-
-#icon {
-    position: relative;
-    width: 100%;
-    height: 1000px;
-}
-
-#icon h1 {
-    position: absolute;
-    font-size: 2em;
-    margin-left: 13%;
-    margin-top: 10%;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-}
-
-#icon h2 {
-    position: absolute;
-    font-size: 1em;
-    line-height: 150%;
-    margin-left: 13%;
-    margin-top: 15%;
-    font-weight: 500;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.icon-logo-img {
-    position: absolute;
-    margin-left: 13%;
-    margin-top: 25%;
-}
-
-.icon-logo-img img {
-    width: 193px;
-    height: 193px;
-}
-
-#icon-img {
-    position: absolute;
-    margin-left: 32%;
-    margin-top: 25%;
-    width:781px;
-    height:300px;
-}
-
-
-
-/* typography */
-
-#typography {
-    width: 100%;
-    height: 1080px;
-    background-color: #F4F4F4;
-    position: relative;
-}
-
-
-#typography h1 {
-    position: absolute;
-    font-size: 2em;
-    margin-left: 13%;
-    margin-top: 10%;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-}
-
-#typography h2 {
-    position: absolute;
-    font-size: 1em;
-    line-height: 150%;
-    margin-left: 13%;
-    margin-top: 15%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-.typo-title {
-    position: absolute;
-    margin-left: 13%;
-    margin-top: 23%;
-    font-size: 1.56em;
-    font-weight: 700;
-    color: #5f5f5f;
-}
-
-.typo-app {
-    position: absolute;
-    margin-left: 13%;
-    margin-top: 28%;
-    font-size: 1.56em;
-    color: #FFC700;
-    font-weight: 700;
-}
-
-.typo-app-1 {
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 28%;
-    font-size: 1.5em;
-    font-weight: 700;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.typo-app-2 {
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 31%;
-    font-size: 1.38em;
-    font-weight: 700;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.typo-app-3 {
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 34%;
-    font-size: 1.25em;
-    font-weight: 700;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.typo-app-4 {
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 37%;
-    font-size: 1.13em;
-    font-weight: 700;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.typo-app-5 {
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 40%;
-    font-size: 1em;
-    font-weight: 600;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.typo-app-6 {
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 43%;
-    font-size: 0.94em;
-    font-weight: 500;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.typo-web {
-    position: absolute;
-    margin-left: 46%;
-    margin-top: 28%;
-    font-size: 1.56em;
-    color: #FFC700;
-    font-weight: 700;
-}
-
-.typo-web-1 {
-    position: absolute;
-    margin-top: 28%;
-    margin-left: 54%;
-    font-size: 1.69em;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-}
-
-.typo-web-2 {
-    position: absolute;
-    margin-top: 31.5%;
-    margin-left: 54%;
-    font-size: 1.56em;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-}
-
-.typo-web-3 {
-    position: absolute;
-    margin-top: 35%;
-    margin-left: 54%;
-    font-size: 1.38em;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-}
-
-.typo-web-4 {
-    position: absolute;
-    margin-top: 38%;
-    margin-left: 54%;
-    font-size: 1.25em;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-}
-
-.typo-web-5 {
-    position: absolute;
-    margin-top: 40.5%;
-    margin-left: 54%;
-    font-size: 1.56em;
-    font-weight: 700;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.typo-web-6 {
-    position: absolute;
-    margin-top: 43.5%;
-    margin-left: 54%;
-    font-size: 1.25em;
-    font-weight: 700;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.typo-web-7 {
-    position: absolute;
-    margin-top: 46%;
-    margin-left: 54%;
-    font-size: 0.94em;
-    font-weight: 400;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-/* character */
-
-#character {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#character h1 {
-    position: absolute;
-    font-size: 2em;
-    margin-left: 13%;
-    margin-top: 10%;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-}
-
-#character h2 {
-    position: absolute;
-    font-size: 2.5em;
-    margin-left: 35%;
-    margin-top: 14%;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-}
-
-#character span {
-    position: absolute;
-    font-size: 1em;
-    margin-top: 19%;
-    margin-left: 32.5%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#character-1 {
-    position: absolute;
-    width: 28%;
-    margin-top: 23.15%;
-    margin-left: 20%;
-}
-
-#character-2 {
-    position: absolute;
-    width: 19%;
-    margin-top: 24%;
-    margin-left: 59%;
-}
-
-#character #ch1-txt {
-    position: absolute;
-    font-size: 2.5em;
-    font-weight: 800;
-    color: #FFC700;
-    font-family: 'Tmoney RoundWind';
-    margin-left: 31.4%;
-    margin-top: 48%;
-}
-
-#character #ch1-sub-txt {
-    position: absolute;
-    font-size: 1em;
-    font-weight: 400;
-    margin-left: 23.5%;
-    margin-top: 53%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-#ch1-images {
-    position: absolute;
-    margin-left: 8%;
-    margin-top: 25%;
-    display: flex;
-    flex-direction: column;
-}
-
-#ch1-images img:nth-child(1) {
-    width: 6.2vw;
-    margin-left: 17%;
-}
-
-#ch1-images img:nth-child(2){
-    width:9.5vw;
-}
-
-#ch1-images img:nth-child(3) {
-    width: 6.8vw;
-    margin-left: 17%;
-}
-
-#ch1-images img:nth-child(4) {
-    width: 8.3vw;
-    margin-left: 5%;
-}
-
-#character #ch2-txt {
-    position: absolute;
-    font-size: 2.5em;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-    margin-left: 64.5%;
-    margin-top: 48%;
-}
-
-#character #ch2-sub-txt {
-    position: absolute;
-    font-size: 1em;
-    font-weight: 400;
-    margin-left: 56%;
-    margin-top: 53%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-
-#ch2-images {
-    position: absolute;
-    margin-left: 83%;
-    margin-top: 24%;
-    display: flex;
-    flex-direction: column;
-}
-
-#ch2-images img:nth-child(1) {
-    width: 7vw;
-    margin-left: 13%;
-}
-
-#ch2-images img:nth-child(2) {
-    width: 7vw;
-    margin-left: 13%;
-}
-
-#ch2-images img:nth-child(3) {
-    width: 7vw;
-    margin-left: 10%;
-}
-
-#ch2-images img:nth-child(4) {
-    width: 8vw;
-    margin-left: 5%;
-}
-
-
-/* design-keyword */
-
-#design-keyword {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: relative;
-    height: 1080px;
-
-}
-
-.word {
-    position: absolute;
-    cursor: grab;
-    font-size: 1.88em;
-}
-
-#design-keyword h1 {
-    position: absolute;
-    font-size: 2em;
-    margin-left: 13%;
-    margin-top: 10%;
-    font-weight: 800;
-    color: #FFC700;
-    font-family: 'Tmoney RoundWind';
-}
-
-#design-keyword h2 {
-    position: absolute;
-    font-size: 1em;
-    line-height: 150%;
-    margin-left: 13%;
-    margin-top: 14%;
-    color: #fff;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 400;
-    word-break: keep-all;
-}
-
-.keyword-box {
-    width: 100%;
-    height: 700px;
-    position: absolute;
-    top: 35%;
-}
-
-.clear {
-    clear: both;
-}
-
-       /* app-main */
-
-       #app-main {
+
+    header nav {
+        max-width: 1920px;
+        min-width: 1440px;
+        line-height: 60px;
+    }
+
+    header h1 {
+        float: left;
+        margin-top: 10px;
+        margin-left: -5%;
+        width: 120px;
+        height: 100px;
+    }
+
+    header h1 img {
+        width: 200px;
+        height: 35px;
+        margin-top: 8%;
+    }
+
+    #gnb {
+        margin-left: 350px;
+        line-height: 80px;
+    }
+
+    #gnb li {
+        display: inline-block;
+        margin-right: 80px;
+        font-size: 0.94em;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        position: relative;
+        /* color: #989898; */
+    }
+
+
+    #gnb li::after {
+        content: '';
+        position: absolute;
+        bottom: 18px;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background-color: #5C59FF;
+        transition: width 0.2s ease;
+        border-radius: 50px;
+    }
+
+    #gnb li:hover::after {
+        width: 100%;
+    }
+
+
+
+
+    #gnb .blue {
+        color: #5C59FF;
+    }
+
+
+
+    /* main */
+
+    #main {
+        height: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #video {
+        vertical-align: middle;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .btn-area {
+        bottom: 100px;
+        left: 60px;
+        position: absolute;
+        display: flex;
+    }
+
+
+    .image-toggle {
+        position: absolute;
+        width: 12vw;
+        height: 30vw;
+    }
+
+    .btn-area2 {
+        bottom: 100px;
+        position: absolute;
+        left: 250px;
+    }
+
+
+
+    .restart-button {
+        position: absolute;
+        width: 12vw;
+        height: 200px;
+        margin-left: 10%;
+    }
+
+
+
+
+    /* overview */
+
+    #overview {
+        width: 100%;
+        height: 1080px;
+        background-color: #fff;
+        position: relative;
+    }
+
+    .overview-txt {
+        width: 64vw;
+        height: 29vh;
+        margin-top: 17%;
+        margin-left: 19%;
+        position: absolute;
+        z-index: 50;
+    }
+
+    .overview-txt h1 {
+        font-family: 'Tmoney RoundWind';
+        font-weight: 800;
+    }
+
+    #overview-ul {
+        position: absolute;
+        width: 12vw;
+        height: 2vh;
+        margin-left: 6%;
+        margin-top: 12%;
+        font-size: 0.8em;
+    }
+
+    .overview-ul-box {
+        position: absolute;
+        background-color: #5C59FF;
+        width: 8px;
+        height: 8px;
+        margin-top: 3px;
+        border-radius: 50px;
+    }
+
+    .overview-ul-txt {
+        margin-left: 10%;
+        font-size: 1em;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #overview h1 {
+        text-align: center;
+        margin-top: 3%;
+        font-size: 3.75em;
+        font-weight: bold;
+        line-height: 98px;
+    }
+
+    #overview p {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 20px;
+        line-height: 150%;
+        font-family: 'SUIT Variable';
+        font-weight: 500;
+    }
+
+    .keyword {
+        width: 100%;
+        height: 500px;
+    }
+
+    #keyword-lbox {
+        padding-bottom: 130px;
+        width: 35vw;
+        height: 500px;
+        margin-top: 17%;
+        position: absolute;
+    }
+
+    #keyword-rbox {
+        padding-bottom: 130px;
+        width: 35vw;
+        height: 500px;
+        margin-top: 17%;
+        margin-left: 64%;
+        position: absolute;
+    }
+
+    #keyword-lbox .keyword {
+        position: relative;
+        width: 35vw;
+        height: 120px;
+        overflow: hidden;
+        float: left;
+    }
+
+    #keyword-rbox .keyword {
+        position: relative;
+        width: 35vw;
+        height: 120px;
+        overflow: hidden;
+        float: right;
+    }
+
+    #keyword-lbox .keyword:nth-child(1),
+    .keyword:nth-child(5) {
+        --move-initial: 0%;
+        --move-final: -40%
+    }
+
+    #keyword-rbox,
+    .keyword:nth-child(1),
+    .keyword:nth-child(5) {
+        --move-initial: 0%;
+        --move-final: -40%
+    }
+
+    #keyword-lbox .keyword:nth-child(3) {
+        --move-initial: -18%;
+        --move-final: 10%
+    }
+
+    #keyword-rbox,
+    .keyword:nth-child(3) {
+        --move-initial: -18%;
+        --move-final: 10%
+    }
+
+    #keyword-lbox .keyword-line {
+        width: max-content;
+        height: 130px;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: moving 13s linear infinite;
+        animation-play-state: running
+    }
+
+    #keyword-rbox .keyword-line {
+        width: max-content;
+        height: 130px;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: moving 13s linear infinite;
+        animation-play-state: running;
+    }
+
+    #keyword-lbox .keyword-line:hover {
+        animation-play-state: paused
+    }
+
+    #keyword-rbox .keyword-line:hover {
+        animation-play-state: paused
+    }
+
+
+
+    @keyframes moving {
+        0% {
+            transform: translate3d(var(--move-initial), 0, 0)
+        }
+
+        100% {
+            transform: translate3d(var(--move-final), 0, 0)
+        }
+    }
+
+    #keyword-lbox .keyword-line li {
+        float: left;
+        font-size: 2.4em;
+        font-weight: 300;
+        border-radius: 75px;
+        padding: 25px 45px;
+        margin: 1%;
+        margin-left: 0
+    }
+
+    #keyword-rbox .keyword-line li {
+        float: right;
+        font-size: 2.4em;
+        font-weight: 300;
+        border-radius: 75px;
+        padding: 25px 45px;
+        margin: 1%;
+        margin-right: 0
+    }
+
+    #keyword-lbox .keyword-line li:last-child {
+        margin-right: 0
+    }
+
+    #keyword-rbox .keyword-line li:last-child {
+        margin-right: 0
+    }
+
+    #keyword-lbox .keyword-line .keyword-blue {
+        border: 1px solid #5C59FF;
+        color: #5C59FF;
+    }
+
+    #keyword-lbox .keyword-line .keyword-blue:hover {
+        background-color: #5C59FF;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #keyword-rbox .keyword-line .keyword-blue {
+        border: 1px solid #5C59FF;
+        color: #5C59FF;
+    }
+
+    #keyword-rbox .keyword-line .keyword-blue:hover {
+        background-color: #5C59FF;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+
+    #keyword-lbox .keyword-line .keyword-yellow {
+        border: 1px solid #FFC700;
+        color: #FFC700;
+    }
+
+    #keyword-rbox .keyword-line .keyword-yellow {
+        border: 1px solid #FFC700;
+        color: #FFC700;
+    }
+
+
+    #keyword-lbox .keyword-line .keyword-yellow:hover {
+        background-color: #FFC700;
+        color: #fff;
+        cursor: pointer
+    }
+
+    #keyword-rbox .keyword-line .keyword-yellow:hover {
+        background-color: #FFC700;
+        color: #fff;
+        cursor: pointer
+    }
+
+
+    #keyword-lbox #fade_L {
+        width: 17vw;
+        height: 450px;
+        position: relative;
+        top: -27%;
+    }
+
+    #keyword-rbox #fade_R {
+        width: 17vw;
+        height: 450px;
+        position: relative;
+        top: -27%;
+    }
+
+    #keyword-lbox #fade_L {
+        background: linear-gradient(88.27deg, rgb(255, 255, 255) 9.34%, rgba(255, 255, 255, 0) 98.31%);
+        float: left;
+        left: -5%;
+    }
+
+    #keyword-rbox #fade_R {
+        background: linear-gradient(-88.27deg, rgb(255, 255, 255) 9.34%, rgba(255, 255, 255, 0) 98.31%);
+        float: right;
+    }
+
+
+    /* news */
+
+
+    #news .yellow {
+        color: #FFC700;
+    }
+
+    #news h1 {
+        position: absolute;
+        text-align: left;
+        margin-top: 10%;
+        font-size: 2.4em;
+        font-weight: 800;
+        margin-left: 6%;
+        line-height: 135%;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #news-1 {
+        position: absolute;
+        text-align: left;
+        margin-top: 21%;
+        font-size: 1em;
+        margin-left: 6%;
+        line-height: 150%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #news-2 {
+        position: absolute;
+        text-align: left;
+        margin-top: 27%;
+        font-size: 1em;
+        margin-left: 6%;
+        line-height: 150%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+
+    /* survey */
+
+    #survey {
         width: 100%;
         height: 1080px;
         position: relative;
     }
-    
-    .app-main-container{
-    height: 100vh;
-      overflow-x: hidden;
-    
+
+    #survey-ul {
+        position: absolute;
+        width: 12vw;
+        height: 2vh;
+        margin-left: 6%;
+        margin-top: 4%;
+        font-size: 0.8em;
     }
-    
+
+    .survey-ul-box {
+        position: absolute;
+        background-color: #5C59FF;
+        width: 8px;
+        height: 8px;
+        margin-top: 0px;
+        border-radius: 50px;
+    }
+
+    .survey-ul-txt {
+        margin-left: 10%;
+        font-size: 1em;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #survey h2 {
+        position: absolute;
+        text-align: center;
+        margin-top: 7%;
+        font-size: 1.25em;
+        font-weight: 800;
+        margin-left: 25%;
+        line-height: 100%;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #survey .blue {
+        color: #5C59FF;
+        font-size: 2em;
+    }
+
+    #survey h1 {
+        position: absolute;
+        text-align: center;
+        margin-top: 10%;
+        margin-left: 25%;
+        font-size: 1.25em;
+        font-weight: 800;
+        line-height: 100%;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #survey-1 {
+        position: absolute;
+        width: 30vw;
+        height: 22vw;
+        background: #fff;
+        box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        margin-top: 15%;
+        margin-left: 18%;
+    }
+
+    #survey-box {
+        position: absolute;
+        width: 28vw;
+        height: 22vw;
+    }
+
+    #survey-1 p {
+        position: absolute;
+        font-size: 1.2em;
+        margin-top: 5%;
+        margin-left: 15%;
+        text-align: center;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    #graph1 {
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        margin-top: 18%;
+        margin-left: 15%;
+    }
+
+    #survey-box #percent1 {
+        position: absolute;
+        margin-top: 31%;
+        margin-left: 31%;
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    #survey-box #percent2 {
+        position: absolute;
+        margin-top: 38%;
+        margin-left: 59%;
+        font-size: 1em;
+        color: #888;
+    }
+
+    #survey-box #percent3 {
+        position: absolute;
+        margin-top: 54%;
+        margin-left: 37%;
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    #survey-box #per-txt1 {
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 67%;
+        font-size: 0.94em;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    #survey-box #per-txt2 {
+        position: absolute;
+        margin-top: 65%;
+        margin-left: 70%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    #arrow1 {
+        position: absolute;
+        width: 3vw;
+        margin-top: 20%;
+        margin-left: 54%;
+        transform: rotate(100deg);
+    }
+
+    #arrow2 {
+        position: absolute;
+        width: 3vw;
+        margin-top: 58%;
+        margin-left: 54%;
+        transform: rotate(150deg);
+    }
+
+    #survey-2 {
+        position: absolute;
+        width: 30vw;
+        height: 22vw;
+        background: #fff;
+        box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        margin-top: 15%;
+        margin-left: 50%;
+    }
+
+    #survey-2 p {
+        position: absolute;
+        font-size: 1.2em;
+        margin-top: 5%;
+        margin-left: 16%;
+        text-align: center;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    #survey-3 {
+        position: absolute;
+        width: 63vw;
+        height: 16vw;
+        background: #fff;
+        box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        margin-top: 39%;
+        margin-left: 17.4%;
+    }
+
+    #survey-3 p {
+        position: absolute;
+        font-size: 1.2em;
+        margin-top: 3%;
+        margin-left: 18%;
+        text-align: center;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    #survey-box2 {
+        position: absolute;
+        width: 28vw;
+        height: 22vw;
+    }
+
+    #graph2 {
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        margin-top: 18%;
+        margin-left: 15%;
+    }
+
+    #survey-box2 #percent4 {
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 43%;
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    #survey-box2 #percent5 {
+        position: absolute;
+        margin-top: 54%;
+        margin-left: 37%;
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    #arrow3 {
+        position: absolute;
+        width: 3vw;
+        margin-top: 58%;
+        margin-left: 54%;
+        transform: rotate(150deg);
+    }
+
+    #survey-box2 #per-txt3 {
+        position: absolute;
+        margin-top: 65%;
+        margin-left: 70%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    #survey-3 #per-txt4 {
+        position: absolute;
+        font-size: 1.5em;
+        color: #B5B5B5;
+        margin-top: 12%;
+        margin-left: 8%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    #survey-3 #per-txt5 {
+        position: absolute;
+        font-size: 1.5em;
+        color: #B5B5B5;
+        margin-top: 10%;
+        margin-left: 30%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    #survey-3 #per-txt6 {
+        position: absolute;
+        font-size: 1.5em;
+        color: #B5B5B5;
+        margin-top: 10%;
+        margin-left: 52%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    #survey-3 #per-txt7 {
+        position: absolute;
+        font-size: 1.5em;
+        color: #B5B5B5;
+        margin-top: 12%;
+        margin-left: 78%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    #survey-3 #per-txt8 {
+        position: absolute;
+        font-size: 1.5em;
+        color: #B5B5B5;
+        margin-top: 19%;
+        margin-left: 12%;
+        word-break: keep-all;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    #survey-3 #per-txt9 {
+        position: absolute;
+        font-size: 1.5em;
+        color: #B5B5B5;
+        margin-top: 17%;
+        margin-left: 40%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    #survey-3 #per-txt10 {
+        position: absolute;
+        font-size: 1.5em;
+        color: #B5B5B5;
+        margin-top: 19%;
+        margin-left: 62%;
+        text-align: center;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    .term {
+        position: absolute;
+        font-size: 1em;
+        font-weight: 300;
+        margin-top: 57%;
+        margin-left: 17%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    .term-right {
+        position: absolute;
+        font-size: 1em;
+        font-weight: 300;
+        margin-top: 57%;
+        margin-left: 74%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 300;
+    }
+
+
+    /* service-target */
+
+    #service-target {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #service-ul {
+        position: absolute;
+        width: 12vw;
+        height: 2vh;
+        margin-left: 6%;
+        margin-top: 8%;
+        font-size: 0.8em;
+    }
+
+    .service-ul-box {
+        position: absolute;
+        background-color: #5C59FF;
+        width: 8px;
+        height: 8px;
+        margin-top: 0px;
+        border-radius: 50px;
+    }
+
+    .service-ul-txt {
+        margin-left: 10%;
+        font-size: 1em;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #service-target h1 {
+        position: absolute;
+        text-align: left;
+        margin-top: 13%;
+        font-size: 2.5em;
+        font-weight: 800;
+        margin-left: 6%;
+        line-height: 140%;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #service-target .blue {
+        color: #5C59FF;
+    }
+
+    #service-target h2 {
+        position: absolute;
+        text-align: left;
+        margin-top: 22%;
+        font-size: 1em;
+        margin-left: 6%;
+        line-height: 150%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #target {
+        margin-top: 12%;
+    }
+
+    #target .content {
+        margin-top: 2%;
+        width: 42vw;
+    }
+
+    #target_move {
+        position: absolute;
+        width: 100%;
+        height: 220px;
+        display: flex;
+        margin-top: 34%;
+        margin-left: 8%;
+    }
+
+    .target_img {
+        width: 30vw;
+        height: 230px;
+        background: #5C59FF;
+        border-radius: 20px;
+        display: flex;
+        color: #fff;
+        box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    .target_img2 {
+        width: 30vw;
+        height: 230px;
+        background: #fff;
+        color: #000;
+        border-radius: 20px;
+        display: flex;
+        margin-left: 20%;
+        box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    .target_img3 {
+        width: 30vw;
+        height: 230px;
+        background: #5C59FF;
+        border-radius: 20px;
+        display: flex;
+        margin-left: 38%;
+        color: #fff;
+        box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    .target_img img {
+        width: 13vw;
+        height: 13vw;
+        margin-top: 5%;
+        margin-left: -20%;
+    }
+
+    .target_img2 img {
+        width: 11vw;
+        height: 11vw;
+        margin-top: 6%;
+        margin-left: -20%;
+    }
+
+    .target_img3 img {
+        width: 13vw;
+        height: 13vw;
+        margin-top: 5%;
+        margin-left: -20%;
+    }
+
+    .target_text {
+        height: 17vw;
+        margin-top: 14%;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        margin-left: -3%;
+        word-break: keep-all;
+        padding: 20px;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-size: 0.8em;
+    }
+
+    .target_text p:nth-child(1) {
+        color: #fff;
+        font-size: 1em;
+        line-height: 170%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .target_text p:nth-child(2) {
+        font-size: 1.4em;
+        line-height: 150%;
+        margin-top: 19px;
+        color: #fff;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    #persona-color p {
+        color: #000;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 700;
+    }
+
+
+    /* ux-goal */
+
+    #ux-goal {
+        width: 100%;
+        height: 1080px;
+        background-color: #FFC700;
+        position: relative;
+    }
+
+    #ux-goal-ul {
+        position: absolute;
+        width: 12vw;
+        height: 2vh;
+        margin-left: 6%;
+        margin-top: 8%;
+        font-size: 0.8em;
+    }
+
+    .ux-goal-ul-box {
+        position: absolute;
+        background-color: #5C59FF;
+        width: 8px;
+        height: 8px;
+        margin-top: 0px;
+        border-radius: 50px;
+    }
+
+    .ux-goal-ul-txt {
+        margin-left: 10%;
+        font-size: 1em;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #ux-goal .blue {
+        color: #5C59FF;
+    }
+
+    #ux-goal h1 {
+        position: absolute;
+        text-align: left;
+        margin-top: 15%;
+        font-size: 2.5em;
+        font-weight: 800;
+        margin-left: 16%;
+        text-align: center;
+        font-family: 'Tmoney RoundWind';
+        line-height: 135%;
+    }
+
+    .ux-goal-box {
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        margin-top: 28%;
+        display: inline-block;
+    }
+
+    .ux-goal-1 {
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 100%;
+        margin-top: 3%;
+        background: #fff;
+        margin-left: 6%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ux-goal-1 img {
+        position: absolute;
+        width: 6vw;
+        height: 6vw;
+        margin-left: 5%;
+    }
+
+    .ux-goal-1 h2 {
+        position: absolute;
+        font-size: 1.88em;
+        text-align: center;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-top: 33%;
+        margin-left: 27%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .ux-goal-2 {
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 100%;
+        margin-top: 3%;
+        background: #fff;
+        margin-left: 36%;
+    }
+
+    .ux-goal-2 img {
+        position: absolute;
+        width: 6vw;
+        height: 6vw;
+        margin-left: 5%;
+    }
+
+    .ux-goal-2 h2 {
+        position: absolute;
+        font-size: 1.88em;
+        text-align: center;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-top: 39%;
+        margin-left: 27%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .ux-goal-3 {
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 100%;
+        margin-top: 3%;
+        background: #fff;
+        margin-left: 67%;
+    }
+
+    .ux-goal-3 img {
+        position: absolute;
+        width: 6vw;
+        height: 6vw;
+        margin-left: 5%;
+    }
+
+    .ux-goal-3 h2 {
+        position: absolute;
+        font-size: 1.88em;
+        text-align: center;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-top: 39%;
+        margin-left: 28%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    /* logo-design */
+
+    #logo-design {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #logo-design-ul {
+        position: absolute;
+        width: 12vw;
+        height: 2vh;
+        margin-left: 6%;
+        margin-top: 4%;
+        font-size: 0.8em;
+    }
+
+    .logo-design-ul-box {
+        position: absolute;
+        background-color: #FFC700;
+        width: 8px;
+        height: 8px;
+        margin-top: 0px;
+        border-radius: 50px;
+    }
+
+    .logo-design-ul-txt {
+        margin-left: 10%;
+        font-size: 1em;
+        font-weight: 800;
+        color: #FFC700;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #logo-design h1 {
+        position: absolute;
+        font-size: 2em;
+        margin-left: 13%;
+        margin-top: 10%;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    .logo-design-img {
+        position: absolute;
+    }
+
+    #design-logo1 {
+        width: 14vw;
+        height: 14vw;
+        position: absolute;
+        margin-top: 40%;
+        margin-left: 130%;
+    }
+
+    #design-logo2 {
+        width: 33vw;
+        margin-top: 85%;
+        margin-left: 100%;
+    }
+
+    .logo-design-txt .blue {
+        color: #5C59FF;
+    }
+
+    .logo-design-txt .yellow {
+        color: #FFC700;
+    }
+
+    .logo-design-txt h2 {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: 25.5%;
+        font-size: 2.5em;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+    }
+
+
+    .logo-design-txt p {
+        position: absolute;
+        margin-top: 46%;
+        margin-left: 25.5%;
+        text-align: center;
+        font-size: 1em;
+        line-height: 170%;
+        font-weight: 500;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    /* color */
+
+    #color {
+        width: 100%;
+        height: 900px;
+        background: #F4F4F4;
+        position: relative;
+    }
+
+    #color h1 {
+        position: absolute;
+        font-size: 2em;
+        margin-left: 13%;
+        margin-top: 10%;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #color h2 {
+        position: absolute;
+        font-size: 1em;
+        line-height: 150%;
+        margin-left: 13%;
+        margin-top: 15%;
+        font-weight: 500;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .color-box {
+        width: 75%;
+        height: 400px;
+        position: relative;
+        top: 43%;
+        left: 13%;
+    }
+
+    .rookie-yellow {
+        background-color: #FFC700;
+        width: 35%;
+        height: 336px;
+        position: absolute;
+        border-radius: 80px 0 0 80px;
+    }
+
+    .rookie-yellow h3 {
+        position: absolute;
+        font-size: 1.38em;
+        font-weight: 800;
+        margin-top: 38%;
+        margin-left: 38%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .rookie-yellow span {
+        position: absolute;
+        font-size: 0.75em;
+        font-weight: 600;
+        margin-left: 44%;
+        margin-top: 43%;
+        text-align: center;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .pro-bluepurple {
+        background-color: #5C59FF;
+        width: 35%;
+        height: 336px;
+        position: absolute;
+        left: 35%;
+    }
+
+    .pro-bluepurple h3 {
+        position: absolute;
+        font-size: 1.38em;
+        font-weight: 800;
+        margin-top: 38%;
+        margin-left: 35%;
+        color: #fff;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .pro-bluepurple span {
+        position: absolute;
+        font-size: 0.75em;
+        font-weight: 600;
+        margin-left: 44%;
+        margin-top: 43%;
+        text-align: center;
+        color: #fff;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .mate-white {
+        width: 30%;
+        height: 336px;
+        border-radius: 0 80px 80px 0;
+        background-color: #fff;
+        left: 70%;
+        position: absolute;
+    }
+
+    .mate-white h3 {
+        position: absolute;
+        font-size: 1.38em;
+        font-weight: 800;
+        margin-top: 44%;
+        margin-left: 32%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .mate-white span {
+        position: absolute;
+        font-size: 0.75em;
+        font-weight: 600;
+        margin-left: 42%;
+        margin-top: 49%;
+        text-align: center;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+
+    /* icon */
+
+    #icon {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+    }
+
+    #icon h1 {
+        position: absolute;
+        font-size: 2em;
+        margin-left: 13%;
+        margin-top: 10%;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #icon h2 {
+        position: absolute;
+        font-size: 1em;
+        line-height: 150%;
+        margin-left: 13%;
+        margin-top: 15%;
+        font-weight: 500;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .icon-logo-img {
+        position: absolute;
+        margin-left: 13%;
+        margin-top: 25%;
+    }
+
+    .icon-logo-img img {
+        width: 193px;
+        height: 193px;
+    }
+
+    #icon-img {
+        position: absolute;
+        margin-left: 32%;
+        margin-top: 25%;
+        width: 781px;
+        height: 300px;
+    }
+
+
+
+    /* typography */
+
+    #typography {
+        width: 100%;
+        height: 1080px;
+        background-color: #F4F4F4;
+        position: relative;
+    }
+
+
+    #typography h1 {
+        position: absolute;
+        font-size: 2em;
+        margin-left: 13%;
+        margin-top: 10%;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #typography h2 {
+        position: absolute;
+        font-size: 1em;
+        line-height: 150%;
+        margin-left: 13%;
+        margin-top: 15%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .typo-title {
+        position: absolute;
+        margin-left: 13%;
+        margin-top: 23%;
+        font-size: 1.56em;
+        font-weight: 700;
+        color: #5f5f5f;
+    }
+
+    .typo-app {
+        position: absolute;
+        margin-left: 13%;
+        margin-top: 28%;
+        font-size: 1.56em;
+        color: #FFC700;
+        font-weight: 700;
+    }
+
+    .typo-app-1 {
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 28%;
+        font-size: 1.5em;
+        font-weight: 700;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .typo-app-2 {
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 31%;
+        font-size: 1.38em;
+        font-weight: 700;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .typo-app-3 {
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 34%;
+        font-size: 1.25em;
+        font-weight: 700;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .typo-app-4 {
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 37%;
+        font-size: 1.13em;
+        font-weight: 700;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .typo-app-5 {
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 40%;
+        font-size: 1em;
+        font-weight: 600;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .typo-app-6 {
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 43%;
+        font-size: 0.94em;
+        font-weight: 500;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .typo-web {
+        position: absolute;
+        margin-left: 46%;
+        margin-top: 28%;
+        font-size: 1.56em;
+        color: #FFC700;
+        font-weight: 700;
+    }
+
+    .typo-web-1 {
+        position: absolute;
+        margin-top: 28%;
+        margin-left: 54%;
+        font-size: 1.69em;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    .typo-web-2 {
+        position: absolute;
+        margin-top: 31.5%;
+        margin-left: 54%;
+        font-size: 1.56em;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    .typo-web-3 {
+        position: absolute;
+        margin-top: 35%;
+        margin-left: 54%;
+        font-size: 1.38em;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    .typo-web-4 {
+        position: absolute;
+        margin-top: 38%;
+        margin-left: 54%;
+        font-size: 1.25em;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    .typo-web-5 {
+        position: absolute;
+        margin-top: 40.5%;
+        margin-left: 54%;
+        font-size: 1.56em;
+        font-weight: 700;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .typo-web-6 {
+        position: absolute;
+        margin-top: 43.5%;
+        margin-left: 54%;
+        font-size: 1.25em;
+        font-weight: 700;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .typo-web-7 {
+        position: absolute;
+        margin-top: 46%;
+        margin-left: 54%;
+        font-size: 0.94em;
+        font-weight: 400;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    /* character */
+
+    #character {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #character h1 {
+        position: absolute;
+        font-size: 2em;
+        margin-left: 13%;
+        margin-top: 10%;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #character h2 {
+        position: absolute;
+        font-size: 2.5em;
+        margin-left: 35%;
+        margin-top: 14%;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #character span {
+        position: absolute;
+        font-size: 1em;
+        margin-top: 19%;
+        margin-left: 32.5%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #character-1 {
+        position: absolute;
+        width: 28%;
+        margin-top: 23.15%;
+        margin-left: 20%;
+    }
+
+    #character-2 {
+        position: absolute;
+        width: 19%;
+        margin-top: 24%;
+        margin-left: 59%;
+    }
+
+    #character #ch1-txt {
+        position: absolute;
+        font-size: 2.5em;
+        font-weight: 800;
+        color: #FFC700;
+        font-family: 'Tmoney RoundWind';
+        margin-left: 31.4%;
+        margin-top: 48%;
+    }
+
+    #character #ch1-sub-txt {
+        position: absolute;
+        font-size: 1em;
+        font-weight: 400;
+        margin-left: 23.5%;
+        margin-top: 53%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    #ch1-images {
+        position: absolute;
+        margin-left: 8%;
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ch1-images img:nth-child(1) {
+        width: 6.2vw;
+        margin-left: 17%;
+    }
+
+    #ch1-images img:nth-child(2) {
+        width: 9.5vw;
+    }
+
+    #ch1-images img:nth-child(3) {
+        width: 6.8vw;
+        margin-left: 17%;
+    }
+
+    #ch1-images img:nth-child(4) {
+        width: 8.3vw;
+        margin-left: 5%;
+    }
+
+    #character #ch2-txt {
+        position: absolute;
+        font-size: 2.5em;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+        margin-left: 64.5%;
+        margin-top: 48%;
+    }
+
+    #character #ch2-sub-txt {
+        position: absolute;
+        font-size: 1em;
+        font-weight: 400;
+        margin-left: 56%;
+        margin-top: 53%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+
+    #ch2-images {
+        position: absolute;
+        margin-left: 83%;
+        margin-top: 24%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ch2-images img:nth-child(1) {
+        width: 7vw;
+        margin-left: 13%;
+    }
+
+    #ch2-images img:nth-child(2) {
+        width: 7vw;
+        margin-left: 13%;
+    }
+
+    #ch2-images img:nth-child(3) {
+        width: 7vw;
+        margin-left: 10%;
+    }
+
+    #ch2-images img:nth-child(4) {
+        width: 8vw;
+        margin-left: 5%;
+    }
+
+
+    /* design-keyword */
+
+    #design-keyword {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        height: 1080px;
+
+    }
+
+    .word {
+        position: absolute;
+        cursor: grab;
+        font-size: 1.88em;
+    }
+
+    #design-keyword h1 {
+        position: absolute;
+        font-size: 2em;
+        margin-left: 13%;
+        margin-top: 10%;
+        font-weight: 800;
+        color: #FFC700;
+        font-family: 'Tmoney RoundWind';
+    }
+
+    #design-keyword h2 {
+        position: absolute;
+        font-size: 1em;
+        line-height: 150%;
+        margin-left: 13%;
+        margin-top: 14%;
+        color: #fff;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 400;
+        word-break: keep-all;
+    }
+
+    .keyword-box {
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        top: 35%;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    /* app-main */
+
+    #app-main {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    .app-main-container {
+        height: 100vh;
+        overflow-x: hidden;
+
+    }
+
     .slide {
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      background-position: center;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-position: center;
     }
-    
+
     #app-main-ul {
         position: absolute;
         width: 12vw;
@@ -1904,7 +1919,7 @@ header h1 img {
         margin-top: 4%;
         font-size: 0.8em;
     }
-    
+
     .app-main-ul-box {
         position: absolute;
         background-color: #FFC700;
@@ -1913,7 +1928,7 @@ header h1 img {
         margin-top: 0px;
         border-radius: 50px;
     }
-    
+
     .app-main-ul-txt {
         margin-left: 10%;
         font-size: 1em;
@@ -1921,1023 +1936,1082 @@ header h1 img {
         color: #FFC700;
         font-family: 'Tmoney RoundWind';
     }
-    
+
     #app-logo {
         position: absolute;
-        margin-left: 38%;
-        margin-top: 5%;
+        margin-left: 15%;
+        margin-top: 30%;
+        width:50vw;
     }
-    
+
     #app-logo img {
         width: 60%;
     }
-    
+
     .app-main-txt {
         position: absolute;
-        font-size: 1.56em;
+        font-size: 1.8em;
         font-weight: 800;
         font-family: 'Tmoney RoundWind';
-        margin-top: 11%;
-        margin-left: 38%;
+        margin-top: 38%;
+        margin-left: 14%;
     }
-    
+
     .app-blue {
         color: #5C59FF;
     }
 
     #app-main-img {
-        background-position:53% 65%;
+        background-position: 80% 50%;
     }
 
     #app-main-img1 {
-        background-position:53% 65%;
+        background-position: 80% 50%;
     }
 
     #app-main-img2 {
-        background-position:53% 65%;
+        background-position: 80% 50%;
     }
 
     #app-main-img3 {
-        background-position:53% 65%;
+        background-position: 80% 50%;
     }
 
 
 
 
-/* ch-select */
+    /* ch-select */
 
-#ch-select {
-    width: 100%;
-    height: 1080px;
+    #ch-select {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #ch-select h1 {
+        position: absolute;
+        font-size: 2em;
+        color: #FFC700;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-top: 7%;
+        margin-left: 13%;
+    }
+
+    #ch-select h2 {
+        position: absolute;
+        font-size: 2.38em;
+        color: #FFC700;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-left: 13%;
+        margin-top: 10%;
+    }
+
+    #ch-select .ch-sub {
+        position: absolute;
+        font-size: 1em;
+        line-height: 160%;
+        margin-left: 13%;
+        margin-top: 14%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #ch-s1 {
+        position: absolute;
+        margin-left: 13%;
+        margin-top: 22%;
+        width: 16vw;
+    }
+
+    #ch-s2 {
+        position: absolute;
+        margin-left: 30%;
+        margin-top: 22%;
+        width: 16vw;
+    }
+
+    #ch-s3 {
+        position: absolute;
+        margin-left: 58%;
+        margin-top: 25%;
+        width: 20vw;
+    }
+
+    #ch-s4 {
+        position: absolute;
+        margin-left: 58%;
+        margin-top: 31%;
+        width: 20vw;
+    }
+
+    #ch-s5 {
+        position: absolute;
+        margin-left: 58%;
+        margin-top: 38%;
+        width: 22vw;
+    }
+
+    #ch-s6 {
+        position: absolute;
+        margin-left: 62%;
+        margin-top: 43%;
+        width: 3vw;
+    }
+
+    #ch-select p {
+        position: absolute;
+        font-size: 0.8em;
+        margin-left: 66%;
+        margin-top: 46.5%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+
+    /* app-test */
+
+    #app-test {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #app-test h1 {
+        position: absolute;
+        font-size: 2em;
+        color: #5C59FF;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-top: 7%;
+        margin-left: 13%;
+    }
+
+    #app-test h2 {
+        position: absolute;
+        font-size: 2.38em;
+        color: #5C59FF;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-left: 13%;
+        margin-top: 10%;
+        line-height: 150%;
+    }
+
+    #app-test p {
+        position: absolute;
+        font-size: 1em;
+        line-height: 160%;
+        margin-left: 13%;
+        margin-top: 19%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #app-t1 {
+        position: absolute;
+        margin-top: 26%;
+        margin-left: 33%;
+        width: 14vw;
+    }
+
+    #app-t2 {
+        position: absolute;
+        margin-top: 26%;
+        margin-left: 49%;
+        width: 14vw;
+    }
+
+    #app-t3 {
+        position: absolute;
+        margin-top: 19%;
+        margin-left: 61.5%;
+        width: 25vw;
+    }
+
+
+    /* app-reword */
+
+    #app-reword {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #app-reword h1 {
+        position: absolute;
+        font-size: 2em;
+        color: #FFC700;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-top: 7%;
+        margin-left: 48%;
+    }
+
+    #app-reword h2 {
+        position: absolute;
+        font-size: 2.38em;
+        color: #FFC700;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-left: 48%;
+        margin-top: 10%;
+        line-height: 150%;
+        word-break: keep-all;
+    }
+
+    #app-reword p {
+        position: absolute;
+        font-size: 1em;
+        line-height: 160%;
+        margin-left: 48%;
+        margin-top: 19%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #app-r1 {
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 28vw;
+    }
+
+    #app-r2 {
+        position: absolute;
+        width: 22vw;
+        margin-top: 30%;
+        margin-left: 35%;
+    }
+
+    #app-r3 {
+        position: absolute;
+        width: 16vw;
+        margin-top: 30%;
+        margin-left: 54%;
+    }
+
+    /* app-video */
+
+    #app-video {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #app-video h1 {
+        position: absolute;
+        font-size: 2em;
+        color: #5C59FF;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-top: 7%;
+        margin-left: 13%;
+    }
+
+    #app-video h2 {
+        position: absolute;
+        font-size: 2.38em;
+        color: #5C59FF;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-left: 13%;
+        margin-top: 10%;
+        line-height: 150%;
+    }
+
+    #app-video p {
+        position: absolute;
+        font-size: 1em;
+        line-height: 160%;
+        margin-left: 13%;
+        margin-top: 23%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #app-v1 {
+        position: absolute;
+        margin-left: 45%;
+        margin-top: 7%;
+        width: 20vw;
+    }
+
+    #app-v2 {
+        position: absolute;
+        margin-left: 64%;
+        margin-top: 20%;
+        width: 12vw;
+    }
+
+    #app-v3 {
+        position: absolute;
+        margin-left: 78%;
+        margin-top: 28%;
+        width: 12vw;
+    }
+
+
+    /* app-chat */
+
+    #app-chat {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #app-chat h1 {
+        position: absolute;
+        font-size: 2em;
+        color: #FFC700;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-top: 7%;
+        margin-left: 13%;
+    }
+
+    #app-chat h2 {
+        position: absolute;
+        font-size: 2.38em;
+        color: #FFC700;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-left: 13%;
+        margin-top: 10%;
+        line-height: 150%;
+    }
+
+    #app-chat p {
+        position: absolute;
+        font-size: 1em;
+        line-height: 160%;
+        margin-left: 13%;
+        margin-top: 19%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #app-c1 {
+        position: absolute;
+        margin-left: 13%;
+        margin-top: 28%;
+        width: 12vw;
+    }
+
+    #app-c2 {
+        position: absolute;
+        margin-left: 27%;
+        margin-top: 28%;
+        width: 12vw;
+    }
+
+    #app-c3 {
+        position: absolute;
+        margin-left: 41%;
+        margin-top: 28%;
+        width: 12vw;
+    }
+
+    #app-c4 {
+        position: absolute;
+        margin-left: 51.5%;
+        margin-top: 20%;
+        width: 23vw;
+    }
+
+    #app-c5 {
+        position: absolute;
+        margin-left: 73%;
+        margin-top: 28%;
+        width: 12vw;
+    }
+
+    /* app-mini-game */
+
+    #app-mini-game {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #app-mini-game h1 {
+        position: absolute;
+        font-size: 2em;
+        color: #5C59FF;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-top: 7%;
+        margin-left: 53%;
+    }
+
+    #app-mini-game h2 {
+        position: absolute;
+        font-size: 2.38em;
+        color: #5C59FF;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-left: 53%;
+        margin-top: 10%;
+        line-height: 150%;
+    }
+
+    #app-mini-main-txt {
+        position: absolute;
+        font-size: 1em;
+        line-height: 160%;
+        margin-left: 53%;
+        margin-top: 19%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #app-m1 {
+        position: absolute;
+        margin-left: 16%;
+        width: 16vw;
+        margin-top: 6%;
+    }
+
+    #app-m2 {
+        position: absolute;
+        margin-left: 29%;
+        width: 16vw;
+        margin-top: 6%;
+    }
+
+    #app-m3 {
+        position: absolute;
+        margin-left: 26%;
+        margin-top: 33%;
+        width: 11vw;
+    }
+
+    #app-m4 {
+        position: absolute;
+        margin-left: 38%;
+        margin-top: 33%;
+        width: 11vw;
+    }
+
+    #app-m5 {
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 33%;
+        width: 11vw;
+    }
+
+    #app-m6 {
+        position: absolute;
+        margin-left: 62%;
+        margin-top: 33%;
+        width: 11vw;
+    }
+
+    #app-m7 {
+        position: absolute;
+        margin-left: 74.3%;
+        margin-top: 26.3%;
+        width: 14vw;
+    }
+
+    #app-m8 {
+        position: absolute;
+        margin-left: 70%;
+        margin-top: 27.5%;
+        width: 3vw;
+    }
+
+    #app-mini-txt {
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 30%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8em;
+    }
+
+
+    /* mini-game */
+
+    #mini-game {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #mini-game .page-title {
+        position: absolute;
+        font-size: 4em;
+        color: #FFC700;
+        font-weight: 800;
+        margin-top: 36%;
+        margin-left: 5%;
+        z-index: 10;
+    }
+
+    #mini-game .page-title2 {
+        position: absolute;
+        font-size: 2.5em;
+        word-break: keep-all;
+        margin-left: 54%;
+        padding-left: 12%;
+        text-align: center;
+        margin-top: 35%;
+        font-weight: 800;
+        color: #5C59FF;
+        font-family: 'Tmoney RoundWind';
+        line-height: 130%;
+    }
+
+
+    /* app-mypage */
+
+    #app-mypage {
+        width: 100%;
+        height: 1080px;
+        position: relative;
+    }
+
+    #app-mypage h1 {
+        position: absolute;
+        font-size: 2em;
+        color: #FFC700;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-top: 7%;
+        margin-left: 13%;
+    }
+
+    #app-mypage h2 {
+        position: absolute;
+        font-size: 2.38em;
+        color: #FFC700;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-left: 13%;
+        margin-top: 10%;
+        line-height: 150%;
+    }
+
+    #app-mypage p {
+        position: absolute;
+        font-size: 1em;
+        line-height: 160%;
+        margin-left: 13%;
+        margin-top: 19%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #app-my1 {
+        position: absolute;
+        margin-top: 28%;
+        margin-left: 39.3%;
+        width: 12vw;
+    }
+
+    #app-my2 {
+        position: absolute;
+        margin-top: 28%;
+        margin-left: 53%;
+        width: 12vw;
+    }
+
+    #app-my3 {
+        position: absolute;
+        margin-top: 16.5%;
+        margin-left: 63%;
+        width: 25vw;
+    }
+
+
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: 1180px;
+        background: #fff;
+        position: relative;
+    }
+
+    footer h1 {
+        width: 100%;
+        color: #FFC700;
+        font-size: 2.5em;
+        font-weight: 800;
+        text-align: center;
+        padding-top: 10rem;
+        font-family: 'Tmoney RoundWind';
+        align-items: center;
+        vertical-align: center;
+    }
+
+    footer h2 {
+        width: 100%;
+        color: #FFC700;
+        font-size: 1.5em;
+        font-weight: 800;
+        text-align: center;
+        margin-top: 1%;
+        font-family: 'Tmoney RoundWind';
+        align-items: center;
+        vertical-align: center;
+    }
+
+
+    #profile {
+        display: flex;
+        width: 100%;
+        vertical-align: center;
+        align-items: center;
+        object-fit: center;
+        object-position: center;
+    }
+
+    #profile li {
+        margin-left: 7.5%;
+        text-align: center;
+        padding-top: 5%;
+        color: #5C59FF;
+    }
+
+    #profile li h2 {
+        color: #5C59FF;
+    }
+
+    #pro-1 .pro1{
+    width: 280px;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
     position: relative;
 }
 
-#ch-select h1 {
+
+#pro-1 .speech1{
+    width: 350px;
     position: absolute;
-    font-size: 2em;
-    color: #FFC700;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-top: 7%;
-    margin-left: 13%;
-}
-
-#ch-select h2 {
-    position: absolute;
-    font-size: 2.38em;
-    color: #FFC700;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-left: 13%;
-    margin-top: 10%;
-}
-
-#ch-select .ch-sub {
-    position: absolute;
-    font-size: 1em;
-    line-height: 160%;
-    margin-left: 13%;
-    margin-top: 14%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#ch-s1 {
-    position: absolute;
-    margin-left: 13%;
-    margin-top: 22%;
-    width: 16vw;
-}
-
-#ch-s2 {
-    position: absolute;
-    margin-left: 30%;
-    margin-top: 22%;
-    width: 16vw;
-}
-
-#ch-s3 {
-    position: absolute;
-    margin-left: 58%;
-    margin-top: 25%;
-    width: 20vw;
-}
-
-#ch-s4 {
-    position: absolute;
-    margin-left: 58%;
-    margin-top: 31%;
-    width: 20vw;
-}
-
-#ch-s5 {
-    position: absolute;
-    margin-left: 58%;
-    margin-top: 38%;
-    width: 22vw;
-}
-
-#ch-s6 {
-    position: absolute;
-    margin-left: 62%;
-    margin-top: 43%;
-    width: 3vw;
-}
-
-#ch-select p {
-    position: absolute;
-    font-size: 0.8em;
-    margin-left: 66%;
-    margin-top: 46.5%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-
-/* app-test */
-
-#app-test {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#app-test h1 {
-    position: absolute;
-    font-size: 2em;
-    color: #5C59FF;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-top: 7%;
-    margin-left: 13%;
-}
-
-#app-test h2 {
-    position: absolute;
-    font-size: 2.38em;
-    color: #5C59FF;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-left: 13%;
-    margin-top: 10%;
-    line-height: 150%;
-}
-
-#app-test p {
-    position: absolute;
-    font-size: 1em;
-    line-height: 160%;
-    margin-left: 13%;
-    margin-top: 19%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#app-t1 {
-    position: absolute;
-    margin-top: 26%;
-    margin-left: 33%;
-    width: 14vw;
-}
-
-#app-t2 {
-    position: absolute;
-    margin-top: 26%;
-    margin-left: 49%;
-    width: 14vw;
-}
-
-#app-t3 {
-    position: absolute;
-    margin-top: 19%;
-    margin-left: 61.5%;
-    width: 25vw;
-}
-
-
-/* app-reword */
-
-#app-reword {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#app-reword h1 {
-    position: absolute;
-    font-size: 2em;
-    color: #FFC700;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-top: 7%;
-    margin-left: 48%;
-}
-
-#app-reword h2 {
-    position: absolute;
-    font-size: 2.38em;
-    color: #FFC700;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-left: 48%;
-    margin-top: 10%;
-    line-height: 150%;
-    word-break: keep-all;
-}
-
-#app-reword p {
-    position: absolute;
-    font-size: 1em;
-    line-height: 160%;
-    margin-left: 48%;
-    margin-top: 19%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#app-r1 {
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 5%;
-    width: 28vw;
-}
-
-#app-r2 {
-    position: absolute;
-    width: 22vw;
-    margin-top: 30%;
-    margin-left: 35%;
-}
-
-#app-r3 {
-    position: absolute;
-    width: 16vw;
-    margin-top: 30%;
-    margin-left: 54%;
-}
-
-/* app-video */
-
-#app-video {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#app-video h1 {
-    position: absolute;
-    font-size: 2em;
-    color: #5C59FF;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-top: 7%;
-    margin-left: 13%;
-}
-
-#app-video h2 {
-    position: absolute;
-    font-size: 2.38em;
-    color: #5C59FF;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-left: 13%;
-    margin-top: 10%;
-    line-height: 150%;
-}
-
-#app-video p {
-    position: absolute;
-    font-size: 1em;
-    line-height: 160%;
-    margin-left: 13%;
-    margin-top: 23%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#app-v1 {
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 7%;
-    width: 20vw;
-}
-
-#app-v2 {
-    position: absolute;
-    margin-left: 64%;
-    margin-top: 20%;
-    width: 12vw;
-}
-
-#app-v3 {
-    position: absolute;
-    margin-left: 78%;
-    margin-top: 28%;
-    width: 12vw;
-}
-
-
-/* app-chat */
-
-#app-chat {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#app-chat h1 {
-    position: absolute;
-    font-size: 2em;
-    color: #FFC700;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-top: 7%;
-    margin-left: 13%;
-}
-
-#app-chat h2 {
-    position: absolute;
-    font-size: 2.38em;
-    color: #FFC700;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-left: 13%;
-    margin-top: 10%;
-    line-height: 150%;
-}
-
-#app-chat p {
-    position: absolute;
-    font-size: 1em;
-    line-height: 160%;
-    margin-left: 13%;
-    margin-top: 19%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#app-c1 {
-    position: absolute;
-    margin-left: 13%;
-    margin-top: 28%;
-    width: 12vw;
-}
-
-#app-c2 {
-    position: absolute;
-    margin-left: 27%;
-    margin-top: 28%;
-    width: 12vw;
-}
-
-#app-c3 {
-    position: absolute;
-    margin-left: 41%;
-    margin-top: 28%;
-    width: 12vw;
-}
-
-#app-c4 {
-    position: absolute;
-    margin-left: 51.5%;
-    margin-top: 20%;
-    width: 23vw;
-}
-
-#app-c5 {
-    position: absolute;
-    margin-left: 73%;
-    margin-top: 28%;
-    width: 12vw;
-}
-
-/* app-mini-game */
-
-#app-mini-game {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#app-mini-game h1 {
-    position: absolute;
-    font-size: 2em;
-    color: #5C59FF;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-top: 7%;
-    margin-left: 53%;
-}
-
-#app-mini-game h2 {
-    position: absolute;
-    font-size: 2.38em;
-    color: #5C59FF;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-left: 53%;
-    margin-top: 10%;
-    line-height: 150%;
-}
-
-#app-mini-main-txt {
-    position: absolute;
-    font-size: 1em;
-    line-height: 160%;
-    margin-left: 53%;
-    margin-top: 19%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#app-m1 {
-    position: absolute;
-    margin-left: 16%;
-    width: 16vw;
-    margin-top: 6%;
-}
-
-#app-m2 {
-    position: absolute;
-    margin-left: 29%;
-    width: 16vw;
-    margin-top: 6%;
-}
-
-#app-m3 {
-    position: absolute;
-    margin-left: 26%;
-    margin-top: 33%;
-    width: 11vw;
-}
-
-#app-m4 {
-    position: absolute;
-    margin-left: 38%;
-    margin-top: 33%;
-    width: 11vw;
-}
-
-#app-m5 {
-    position: absolute;
-    margin-left: 50%;
-    margin-top: 33%;
-    width: 11vw;
-}
-
-#app-m6 {
-    position: absolute;
-    margin-left: 62%;
-    margin-top: 33%;
-    width: 11vw;
-}
-
-#app-m7 {
-    position: absolute;
-    margin-left: 74.3%;
-    margin-top: 26.3%;
-    width: 14vw;
-}
-
-#app-m8 {
-    position: absolute;
-    margin-left: 70%;
-    margin-top: 27.5%;
-    width: 3vw;
-}
-
-#app-mini-txt {
-    position: absolute;
-    margin-left: 60%;
-    margin-top: 30%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-    font-size:0.8em;
-}
-
-
-/* mini-game */
-
-#mini-game {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#mini-game .page-title {
-    position: absolute;
-    font-size: 4em;
-    color: #FFC700;
-    font-weight: 800;
-    margin-top: 36%;
-    margin-left: 5%;
-    z-index: 10;
-}
-
-#mini-game .page-title2 {
-    position: absolute;
-    font-size: 2.5em;
-    word-break: keep-all;
-    margin-left: 54%;
-    padding-left: 12%;
-    text-align: center;
-    margin-top: 35%;
-    font-weight: 800;
-    color: #5C59FF;
-    font-family: 'Tmoney RoundWind';
-    line-height: 130%;
-}
-
-
-/* app-mypage */
-
-#app-mypage {
-    width: 100%;
-    height: 1080px;
-    position: relative;
-}
-
-#app-mypage h1 {
-    position: absolute;
-    font-size: 2em;
-    color: #FFC700;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-top: 7%;
-    margin-left: 13%;
-}
-
-#app-mypage h2 {
-    position: absolute;
-    font-size: 2.38em;
-    color: #FFC700;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-left: 13%;
-    margin-top: 10%;
-    line-height: 150%;
-}
-
-#app-mypage p {
-    position: absolute;
-    font-size: 1em;
-    line-height: 160%;
-    margin-left: 13%;
-    margin-top: 19%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-}
-
-#app-my1 {
-    position: absolute;
-    margin-top: 28%;
-    margin-left: 39.3%;
-    width: 12vw;
-}
-
-#app-my2 {
-    position: absolute;
-    margin-top: 28%;
-    margin-left: 53%;
-    width: 12vw;
-}
-
-#app-my3 {
-    position: absolute;
-    margin-top: 16.5%;
-    margin-left: 63%;
-    width: 25vw;
-}
-
-
-
-/* footer */
-
-footer {
-    width: 100%;
-    height: 1180px;
-    background: #fff;
-    position: relative;
-}
-
-footer h1 {
-    width: 100%;
-    color: #FFC700;
-    font-size: 2.5em;
-    font-weight: 800;
-    text-align: center;
-    padding-top: 10rem;
-    font-family: 'Tmoney RoundWind';
-    align-items: center;
-    vertical-align: center;
-}
-
-footer h2 {
-    width: 100%;
-    color: #FFC700;
-    font-size: 1.5em;
-    font-weight: 800;
-    text-align: center;
-    margin-top:1%;
-    font-family: 'Tmoney RoundWind';
-    align-items: center;
-    vertical-align: center;
-}
-
-
-#profile {
-    display: flex;
-    width: 100%;
-    vertical-align: center;
-    align-items: center;
-    object-fit: center;
-    object-position: center;
-}
-
-#profile li {
-    margin-left: 9.5%;
-    text-align: center;
-    padding-top: 5%;
-    color: #5C59FF;   
-}
-
-#profile li h2{
-    color: #5C59FF;   
-}
-
-#profile li img {
-    width:272px;
-    height:272px;
+    top: 35%;
+    left: 9%;
+    opacity: 0;
     transition: all 0.3s ease-in-out;
 }
 
-
-
-#profile li img:nth-of-type(1):hover{
+#pro-1:hover .pro1{
     opacity: 0;
 }
 
-#profile li img:nth-of-type(2):hover{
-    opacity: 0;
+#pro-1:hover .speech1{
+    opacity: 1;
 }
 
-#profile li img:nth-of-type(3):hover{
-    opacity: 0;
-}
-
-#profile li:nth-of-type(1):hover{
-    background-image:url('/image/speech1.png');
-    background-repeat:no-repeat;
-    background-size:85%;
-    background-position:30px 120px;
-}
-#profile li:nth-of-type(2):hover{
-    background-image:url('/image/speech2.png');
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-position:0 100px;
-}
-
-#profile li:nth-of-type(3):hover{
-    background-image:url('/image/speech3.png');
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-position:0 100px;
-}
-
-
-#profile li h2 {
-    font-size: 2.5em;
-    font-weight: 800;
-    margin-top: 17%;
-    font-family: 'Tmoney RoundWind';
-}
-
-
-
-.position {
-    font-size: 1.5em;
-    font-weight: 800;
-    font-family: 'Tmoney RoundWind';
-    margin-top: 4%;
-}
-
-#email {
-    font-size: 1.56em;
-    line-height: 30px;
-    margin-top:20%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-    font-weight: 500;
-    margin-bottom:30%;
-}
-
-
-
-.footer-bottom {
-    position: absolute;
-    height: 400px;
-    width: 100%;
-    background: #5C59FF;
-}
-
-.footer-img img {
-    position: absolute;
-    margin-left: 12%;
-    margin-top: 3%;
-}
-
-
-.pro1 img img{
-    width:240px;
-    height:240px;
-}
-
-
-
-
-.footer-bottom1 {
-    position: absolute;
-    font-size: 0.94em;
-    margin-left: 12%;
-    margin-top: 5.5%;
-    color: #fff;
-    font-weight: 600;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.footer-right {
-    position: absolute;
-    margin-left: 60%;
-    margin-top: 3%;
-    color: #fff;
-}
-
-.footer-right p:nth-of-type(1) {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 150%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.footer-right p:nth-of-type(2) {
-    font-size: 0.94em;
-    font-weight: 600;
-    line-height: 150%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.footer-right p:nth-of-type(3) {
-    font-size: 0.94em;
-    font-weight: 600;
-    line-height: 150%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.footer-right p:nth-of-type(4) {
-    font-size: 0.94em;
-    font-weight: 600;
-    line-height: 150%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.footer-right p:nth-of-type(5) {
-    font-size: 0.94em;
-    font-weight: 600;
-    line-height: 150%;
-    margin-top: 5%;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-.hr {
-    position: absolute;
-    width: 77.5%;
-    border: 1px solid #FFC700;
-    margin-left: 12%;
-    margin-top: 14%;
-}
-
-.copyright {
-    font-size: 0.94em;
-    position: absolute;
-    font-weight: 600;
-    margin-left: 12%;
-    margin-top: 15.2%;
-    color: #fff;
-    font-family: 'SUIT Variable';
-    font-style: normal;
-}
-
-
-
-
-/* 건들지 말기 */
-#container {
-    height: 100vh;
-    top: 0%;
-    /* 높이 조정 필요 */
-    width: 100vw;
-    background-color: #5C59FF;
-}
-
-#keyword-canvas {
-    display: block;
-    border: solid 1px #5C59FF;
-}
-
-
-
-/* card game */
-
-.page-title {
-    color: #FFC700;
-    font-family: 'TmoneyRoundWindExtraBold';
-    font-weight: normal;
-    text-align: center;
-}
-
-#mini-game h1 {
-    margin-left: calc(100vw * 675 /1920);
-    font-size: 80px;
-}
-
-.game-info-container {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: space-between;
-    margin-top: calc(100vw * 250 /1920);
-}
-
-.game-info {
-    font-family: 'TmoneyRoundWindExtraBold';
-    color: #FFBB89;
-    font-size: 2em;
-}
-
-.game-container {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    margin: 50px;
-    justify-content: center;
-    perspective: 500px;
-}
-
-.card {
+#pro-2 .pro2{
+    width: 280px;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
     position: relative;
-    height: 162px;
-    width: 108px;
 }
 
 
-.card-face {
+#pro-2 .speech2{
+    width: 350px;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    backface-visibility: hidden;
-    border-radius: 12px;
-    border-width: 1px;
-    border-style: solid;
-    transition: transform 500ms ease-in-out;
+    top: 35%;
+    left:38%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
 
-.card.visible .card-back {
-    transform: rotateY(-180deg);
+#pro-2:hover .pro2{
+    opacity: 0;
 }
 
-.card.visible .card-front {
-    transform: rotateY(0)
+#pro-2:hover .speech2{
+    opacity: 1;
 }
 
-.card.matched .card-value {
-    animation: dance 1s linear infinite 500ms;
+
+#pro-3 .pro3{
+    width: 280px;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
-.overlay-text {
-    width: 100%;
-    height: 1080px;
-    display: none;
+
+#pro-3 .speech3{
+    width: 350px;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    color: #FFC700;
-    font-family: 'TmoneyRoundWindExtraBold';
-    font-size: 50px;
+    top: 35%;
+    left:65%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
 
-.overlay-text-small {
-    font-size: 30px;
+#pro-3:hover .pro3{
+    opacity: 0;
 }
 
-.overlay-text.visible {
-    display: flex;
-    flex-direction: column;
-    animation: overlay-grow 500ms forwards;
+#pro-3:hover .speech3{
+    opacity: 1;
 }
 
-@keyframes overlay-grow {
-    from {
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 0;
+
+
+    
+    #pro-1 .pro11{
+        padding-top:3%;
     }
 
-    to {
-        background-color: rgba(0, 0, 0, .8);
-        font-size: 4em;
+    #pro-1 .position{
+        margin-top:3%;
     }
-}
 
+    #profile .email2{
+        padding-top:7%;
+    }
 
-.card-back {
-    background-color: black;
-}
-
-.card-back img {
-    width: 100%;
-    height: 100%;
-}
-
-.card-front {
-    transform: rotateY(180deg);
-}
-
-.card-value img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-
-.cob-web {
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    transition: width 100ms ease-in-out, height 100ms ease-in-out;
-}
-
-.card-face:hover .cob-web {
-    width: 52px;
-    height: 52px;
-}
+    #profile .email3{
+        padding-top:7%;
+    }
 
 
 
-.spider {
-    align-self: flex-start;
-    transform: translateY(-10px);
-    transition: transform 100ms ease-in-out;
-}
 
-.card-back:hover .spider {
-    transform: translateY(0)
-}
+    #profile li h2 {
+        font-size: 2.5em;
+        font-weight: 800;
+        margin-top: 17%;
+        font-family: 'Tmoney RoundWind';
+    }
 
 
 
-#scrollTopbtn {
-    bottom:20px;
-    right:30px;
-    position: fixed;
-    z-index: 1000;
-}
+    .position {
+        font-size: 1.5em;
+        font-weight: 800;
+        font-family: 'Tmoney RoundWind';
+        margin-top: 4%;
+    }
 
-#scrollTopbtn img{
-    width:4vw;
-}
+    #email {
+        font-size: 1.56em;
+        line-height: 30px;
+        margin-top: 15%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 30%;
+    }
 
-#scrollgame{
-    bottom:20px;
-    right:130px;
-    position: fixed;
-    z-index: 1000;
-}
 
 
-#scrollgame img{
-    width:4vw;
-}
+
+    .footer-bottom {
+        position: absolute;
+        height: 400px;
+        width: 100%;
+        background: #5C59FF;
+    }
+
+    .footer-img img {
+        position: absolute;
+        margin-left: 12%;
+        margin-top: 3%;
+    }
+
+
+    .pro1 img img {
+        width: 240px;
+        height: 240px;
+    }
+
+
+
+
+    .footer-bottom1 {
+        position: absolute;
+        font-size: 0.94em;
+        margin-left: 12%;
+        margin-top: 5.5%;
+        color: #fff;
+        font-weight: 600;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .footer-right {
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 3%;
+        color: #fff;
+    }
+
+    .footer-right p:nth-of-type(1) {
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 150%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .footer-right p:nth-of-type(2) {
+        font-size: 0.94em;
+        font-weight: 600;
+        line-height: 150%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .footer-right p:nth-of-type(3) {
+        font-size: 0.94em;
+        font-weight: 600;
+        line-height: 150%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .footer-right p:nth-of-type(4) {
+        font-size: 0.94em;
+        font-weight: 600;
+        line-height: 150%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .footer-right p:nth-of-type(5) {
+        font-size: 0.94em;
+        font-weight: 600;
+        line-height: 150%;
+        margin-top: 5%;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+    .hr {
+        position: absolute;
+        width: 77.5%;
+        border: 1px solid #FFC700;
+        margin-left: 12%;
+        margin-top: 14%;
+    }
+
+    .copyright {
+        font-size: 0.94em;
+        position: absolute;
+        font-weight: 600;
+        margin-left: 12%;
+        margin-top: 15.2%;
+        color: #fff;
+        font-family: 'SUIT Variable';
+        font-style: normal;
+    }
+
+
+
+
+    /* 건들지 말기 */
+    #container {
+        height: 100vh;
+        top: 0%;
+        /* 높이 조정 필요 */
+        width: 100vw;
+        background-color: #5C59FF;
+    }
+
+    #keyword-canvas {
+        display: block;
+        border: solid 1px #5C59FF;
+    }
+
+
+
+    /* card game */
+
+    .page-title {
+        color: #FFC700;
+        font-family: 'TmoneyRoundWindExtraBold';
+        font-weight: normal;
+        text-align: center;
+    }
+
+    #mini-game h1 {
+        margin-left: calc(100vw * 675 /1920);
+        font-size: 80px;
+    }
+
+    .game-info-container {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: space-between;
+        margin-top: calc(100vw * 250 /1920);
+    }
+
+    .game-info {
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: #FFBB89;
+        font-size: 2em;
+    }
+
+    .game-container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 10px;
+        margin: 50px;
+        justify-content: center;
+        perspective: 500px;
+    }
+
+    .card {
+        position: relative;
+        height: 162px;
+        width: 108px;
+    }
+
+
+    .card-face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        backface-visibility: hidden;
+        border-radius: 12px;
+        border-width: 1px;
+        border-style: solid;
+        transition: transform 500ms ease-in-out;
+    }
+
+    .card.visible .card-back {
+        transform: rotateY(-180deg);
+    }
+
+    .card.visible .card-front {
+        transform: rotateY(0)
+    }
+
+    .card.matched .card-value {
+        animation: dance 1s linear infinite 500ms;
+    }
+
+    .overlay-text {
+        width: 100%;
+        height: 1080px;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        color: #FFC700;
+        font-family: 'TmoneyRoundWindExtraBold';
+        font-size: 50px;
+    }
+
+    .overlay-text-small {
+        font-size: 30px;
+    }
+
+    .overlay-text.visible {
+        display: flex;
+        flex-direction: column;
+        animation: overlay-grow 500ms forwards;
+    }
+
+    @keyframes overlay-grow {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+
+        to {
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 4em;
+        }
+    }
+
+
+    .card-back {
+        background-color: black;
+    }
+
+    .card-back img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-front {
+        transform: rotateY(180deg);
+    }
+
+    .card-value img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+    .cob-web {
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        transition: width 100ms ease-in-out, height 100ms ease-in-out;
+    }
+
+    .card-face:hover .cob-web {
+        width: 52px;
+        height: 52px;
+    }
+
+
+
+    .spider {
+        align-self: flex-start;
+        transform: translateY(-10px);
+        transition: transform 100ms ease-in-out;
+    }
+
+    .card-back:hover .spider {
+        transform: translateY(0)
+    }
+
+
+
+    #scrollTopbtn {
+        bottom: 20px;
+        right: 30px;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    #scrollTopbtn img {
+        width: 4vw;
+    }
+
+    #scrollgame {
+        bottom: 20px;
+        right: 130px;
+        position: fixed;
+        z-index: 1000;
+    }
+
+
+    #scrollgame img {
+        width: 4vw;
+    }
 }

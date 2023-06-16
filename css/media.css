@@ -259,20 +259,29 @@
         font-size:2.2em;
     }
 
+    #app-logo{
+        margin-top:23%;
+    }
+
+    .app-main-txt{
+        margin-top:30%;
+        margin-left:16.5%;
+    }
+
     #app-main-img {
-        background-position:50% 90%;
+        background-position: 80% 50%;
     }
 
     #app-main-img1 {
-        background-position:50% 90%;
+        background-position: 80% 50%;
     }
 
     #app-main-img2 {
-        background-position:50% 90%;
+        background-position: 80% 50%;
     }
 
     #app-main-img3 {
-        background-position:50% 90%;
+        background-position: 80% 50%;
     }
 
     #ch-select h1{
@@ -464,7 +473,7 @@
     }
 
     #profile li{
-        margin-left:11.6%;
+        margin-left:10%;
     }
 
     .footer-bottom1{
@@ -494,12 +503,27 @@
     .copyright{
         font-size:1.13em;
     }
+
+    #pro-1 .speech1{
+        top: 35%;
+        left: 11%;
+    }
+
+    #pro-2 .speech2{
+        top: 35%;
+        left:40%;
+    }
+
+    #pro-3 .speech3{
+        top: 35%;
+        left:66%;
+    }
 }
 
 @media all and (min-width:1920px){
 
     #gnb{
-        margin-left:750px;
+        margin-left:650px;
     }
     .btn-area2{
         left:320px;
@@ -790,31 +814,51 @@
     }
 
     #profile li{
-        margin-left:13%;
+        margin-left:12%;
+    }
+
+    #app-logo{
+        margin-top:18%;
+        margin-left:15%;
+    }
+
+    .app-main-txt{
+        margin-top:25%;
+        margin-left:17.5%;
     }
 
     #app-main-img {
-        background-position:50.5% 90%;
-        background-size:22%;
+        background-position: 80% 50%;
     }
 
     #app-main-img1 {
-        background-position:50.5% 90%;
-        background-size:22%;
+        background-position: 80% 50%;
     }
 
     #app-main-img2 {
-        background-position:50.5% 90%;
-        background-size:22%;
+        background-position: 80% 50%;
     }
 
     #app-main-img3 {
-        background-position:50.5% 90%;
-        background-size:22%;
+        background-position: 80% 50%;
     }
-
     footer{
         height:1300px;
+    }
+
+    #pro-1 .speech1{
+        top: 35%;
+        left: 12.5%;
+    }
+
+    #pro-2 .speech2{
+        top: 35%;
+        left:41.5%;
+    }
+
+    #pro-3 .speech3{
+        top: 35%;
+        left:68%;
     }
 
 }
