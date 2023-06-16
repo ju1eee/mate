@@ -20,6 +20,14 @@
         font-size:1em;
     }
 
+    #survey h2{
+        margin-left:28%;
+    }
+
+    #survey h1{
+        margin-left:28%;
+    }
+
     #survey-ul{
         font-size:1em;
     }
@@ -536,6 +544,7 @@
 
     #survey h1{
         font-size:1.56em;
+        margin-left:25%;
     }
 
     #survey-1 p{
